@@ -8,12 +8,12 @@ function App() {
       <Switch>
         <Route path={process.env.PUBLIC_URL + "/"} exact component={Home} />
         <Route
-          path={process.env.PUBLIC_URL + "/About"}
+          path={process.env.PUBLIC_URL + "/about"}
           exact
           component={About}
         />
         <Route
-          path={process.env.PUBLIC_URL + "/Contact"}
+          path={process.env.PUBLIC_URL + "/contact"}
           exact
           component={Contact}
         />
