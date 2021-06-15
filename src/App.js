@@ -1,6 +1,13 @@
 import React from "react";
 import { Browserrouter as Router, Switch, Route } from "react-router-dom";
 
+// importing all components
+import Navigation from "./components/Navigation";
+import Home from "./components/Home";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+
 function App() {
   return (
     <Router className="App">
@@ -11,6 +18,11 @@ function App() {
           path={process.env.PUBLIC_URL + "/about"}
           exact
           component={About}
+        />
+        <Route
+          path={process.env.PUBLIC_URL + "/projects"}
+          exact
+          component={Projects}
         />
         <Route
           path={process.env.PUBLIC_URL + "/contact"}
