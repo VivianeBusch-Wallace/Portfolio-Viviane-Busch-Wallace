@@ -12,7 +12,11 @@ function App() {
           exact
           component={About}
         />
-
+        <Route
+          path={process.env.PUBLIC_URL + "/Contact"}
+          exact
+          component={Contact}
+        />
         <Route path={() => "/main" || "/anything"}>
           <Home />
         </Route>
