@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/Portfolio-Viviane-Busch-Wallace/static/js/main.6ee10513.chunk.js",
-    "main.js.map": "/Portfolio-Viviane-Busch-Wallace/static/js/main.6ee10513.chunk.js.map",
+    "main.js": "/Portfolio-Viviane-Busch-Wallace/static/js/main.0057f505.chunk.js",
+    "main.js.map": "/Portfolio-Viviane-Busch-Wallace/static/js/main.0057f505.chunk.js.map",
     "runtime-main.js": "/Portfolio-Viviane-Busch-Wallace/static/js/runtime-main.f184464e.js",
     "runtime-main.js.map": "/Portfolio-Viviane-Busch-Wallace/static/js/runtime-main.f184464e.js.map",
     "static/js/2.5033052d.chunk.js": "/Portfolio-Viviane-Busch-Wallace/static/js/2.5033052d.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.f184464e.js",
     "static/js/2.5033052d.chunk.js",
-    "static/js/main.6ee10513.chunk.js"
+    "static/js/main.0057f505.chunk.js"
   ]
 }
