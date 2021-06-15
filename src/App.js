@@ -33,7 +33,6 @@ function App() {
           <Home />
         </Route>
       </Switch>
-      {/* <header className="header"></header> */}
     </Router>
   );
 }
