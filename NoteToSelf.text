@@ -1,0 +1,6 @@
+
+for working with router:
+npm install react-router-dom 
+
+for working with bootstrap:
+npm install react-bootstrap bootstrap@4.6.0 
