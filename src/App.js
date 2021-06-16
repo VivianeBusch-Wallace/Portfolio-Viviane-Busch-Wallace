@@ -14,6 +14,7 @@ import CodingProjects from "./projects.json";
 function App() {
   console.log(process.env.PUBLIC_URL);
 
+  // mapping through json file for projects
   const projectItem = CodingProjects.map((proj) => {
     const {
       id,
