@@ -7,6 +7,7 @@ export default Projects;
 // Notes during coding
 
 // ideas:
+// https://reactjsexample.com/ultra-customizable-carousel-framework-for-react-js/
 
 // do not forget:
 

@@ -1,0 +1,56 @@
+[
+  {
+    "id": 0,
+    "project title": "Movie Library",
+    "short description": "First group project",
+    "long description": "This group project was created in 2.5 days with 5 developers. We were all students of the DCI and this was our very first group project.",
+    "special features": "fully responsive, search by movie title, hover effects, advanced vanilla javascript, DOM",
+    "tools": "Sass, vanilla Javascript, HTML, DOM",
+    "source": "./images/"
+  },
+  {
+    "id": 1,
+    "project title": "Rota Game",
+    "short description": "The Ancient Roman Game Of Tic-Tac-Toe",
+    "long description": "This group project was created in 2.5 days with 5 developers. We were all students of the DCI and this was our very first group project.",
+    "special features": "fully responsive, search by movie title, hover effects, advanced vanilla javascript, DOM",
+    "tools": "Sass, vanilla Javascript, HTML, DOM",
+    "source": "./images/"
+  },
+  {
+    "id": 2,
+    "project title": "Youtube App",
+    "short description": "First group project",
+    "long description": "This group project was created in 2.5 days with 5 developers. We were all students of the DCI and this was our very first group project.",
+    "special features": "fully responsive, search by movie title, hover effects, advanced vanilla javascript, DOM",
+    "tools": "Sass, vanilla Javascript, HTML, DOM",
+    "source": "./images/"
+  },
+  {
+    "id": 3,
+    "project title": "Cool Stuff",
+    "short description": "Miscellaneous fun things I coded",
+    "long description": "This group project was created in 2.5 days with 5 developers. We were all students of the DCI and this was our very first group project.",
+    "special features": "fully responsive, search by movie title, hover effects, advanced vanilla javascript, DOM",
+    "tools": "Sass, vanilla Javascript, HTML, DOM",
+    "source": "./images/"
+  },
+  {
+    "id": 4,
+    "project title": "My Old Portfolio",
+    "short description": "The second portfolio I ever created",
+    "long description": "This group project was created in 2.5 days with 5 developers. We were all students of the DCI and this was our very first group project.",
+    "special features": "fully responsive, search by movie title, hover effects, advanced vanilla javascript, DOM",
+    "tools": "Sass, vanilla Javascript, HTML, DOM",
+    "source": "./images/"
+  },
+  {
+    "id": 5,
+    "project title": "Something Cool",
+    "short description": "First group project",
+    "long description": "This group project was created in 2.5 days with 5 developers. We were all students of the DCI and this was our very first group project.",
+    "special features": "fully responsive, search by movie title, hover effects, advanced vanilla javascript, DOM",
+    "tools": "Sass, vanilla Javascript, HTML, DOM",
+    "source": "./images/"
+  }
+]

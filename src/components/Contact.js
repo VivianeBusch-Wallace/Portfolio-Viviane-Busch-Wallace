@@ -82,6 +82,7 @@ export default Contact;
 
 // do not forget:
 // hover effect on button!
+// hover zoom on icons
 // clean up code
 
 // issues encountered:
