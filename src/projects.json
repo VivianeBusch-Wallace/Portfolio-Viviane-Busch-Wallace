@@ -6,7 +6,7 @@
     "longDescription": "This group project was created in 2.5 days with 5 developers. We were all students of the DCI at the time and this was our very first group project. My tasks were to create the posters of the movies, making the main page responsive (incl. hamburger menu for mobile screen sizes), creating the searchbar, and writing the README. I also helped create the main page. The movie information came from the API. It was a great experience and I enjoy working in a team.",
     "keywords": "first group project, responsive, advanced vanilla javascript, DOM, search by movie title, rate movies with stars, favorite movies, hover effects",
     "tools": "Sass, Javascript, HTML, DOM, API",
-    "source": "./images/"
+    "source": "./images/movie-library-main-page-features.png"
   },
   {
     "id": 1,
@@ -15,7 +15,7 @@
     "longDescription": "We were tasked to code a tic-tac-toe game and that inspired me to research where it came from and then I stumbled upon the ancestor of the game, the ancient Roman game called 'Rota'. 'Rota' is latin for 'wheel' and the rules are very similar, although I find it slightly more challenging than tic-tac-toe. I thought it would be interesting to take up the challenge to create the game for online playing. At first I had planned to use DOM, but while I was working on the first draft we started learning React, which is why I changed it to a React based app.",
     "keywords": "React, Javascript, responsive, playable game app, tic-tac-toe like",
     "tools": "Sass, React, Javascript",
-    "source": "./images/"
+    "source": "./images/rota-screenshot.png"
   },
   {
     "id": 2,
@@ -24,7 +24,7 @@
     "longDescription": "This is one of the first bigger projects I created, when I still did not know anything about. I learned a lot about how to group boxes on my page thanks to this project.",
     "keywords": "",
     "tools": "Sass, Javascript, HTML, CSS, DOM",
-    "source": "./images/"
+    "source": "./images/youtube-app.png"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "longDescription": "This is a project which consists of several smaller mini projects. Go ahead and try each app you can see there. Wanna calculate how many days you have left until the weekend? Use my super cool weekend calculator! Wanna speak Computer? Use my base system converter to convert your numbers! I will continue growing this little page with more little apps just for fun.",
     "keywords": "weekend calculator, base system converter, and more",
     "tools": "Sass, Javascript,CSS, HTML, DOM",
-    "source": "./images/"
+    "source": "./images/funstuff.png"
   },
   {
     "id": 4,
@@ -42,7 +42,7 @@
     "longDescription": "Another project I learned a lot from. For example I learned how to use clipart for animations. That was really fun. I thought the ocean theme was cool, but where are the fishies?",
     "keywords": "portfolio, clipart, animations, unusual navigation",
     "tools": "CSS, Javascript, HTML, DOM",
-    "source": "./images/"
+    "source": "./images/portfolio.png"
   },
   {
     "id": 5,
@@ -51,6 +51,6 @@
     "longDescription": "Blah, blah. Stuff you won't read anyway. Ha, I skipped a keyword and you did not notice.",
     "keywords": "keyword1, keyword2, keyword3, keyword5, keyword6",
     "tools": "the usual",
-    "source": "./images/"
+    "source": "./images/portfolio.png"
   }
 ]
