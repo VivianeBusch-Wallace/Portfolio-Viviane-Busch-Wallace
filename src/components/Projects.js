@@ -3,11 +3,13 @@ import React from "react";
 // importing ProjectItem
 import ProjectItem from "./ProjectItem";
 
-const Projects = ({ projFunc }) => {
-  console.log({ projFunc });
+const Projects = ({ codingProjects }) => {
+  console.log("from projects >>");
+  console.log(codingProjects);
+
   return (
     <div className="projects-wrapper">
-      <ProjectItem proj={projFunc} />
+      <ProjectItem codingProjects={codingProjects} />
     </div>
   );
 };
@@ -23,3 +25,8 @@ export default Projects;
 
 // issues encountered:
 // how to make an infinite gallery?
+
+// aborted ideas:
+// { projFunc }
+//   console.log({ projFunc });
+//  proj={projFunc}

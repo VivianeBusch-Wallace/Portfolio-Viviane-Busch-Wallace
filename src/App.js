@@ -12,10 +12,9 @@ import Contact from "./components/Contact";
 import CodingProjects from "./projects.json";
 
 function App() {
-  console.log(process.env.PUBLIC_URL);
-
-  // mapping through json file for projects
-  const projectItem = CodingProjects.map((proj) => proj);
+  // console.log(process.env.PUBLIC_URL);
+  console.log("from App >>");
+  console.log(CodingProjects);
 
   return (
     <Router>
@@ -29,9 +28,10 @@ function App() {
         <Route
           path="/projects"
           exact
-          component={() => <Projects projFunc={projectItem} />}
+          component={() => <Projects codingProjects={CodingProjects} />}
         />
         <Route path="/contact" exact component={Contact} />
+        {/* this ensures that any url which is not given typed in manually will show the homepage as default => */}
         <Route path={() => "/main" || "/anything"}>
           <Home />
         </Route>
@@ -45,6 +45,7 @@ export default App;
 // Notes during coding
 
 // ideas:
+// general plan is to have cool scroll effect
 
 // do not forget:
 // when send props write route differently
@@ -52,3 +53,20 @@ export default App;
 // issues encountered:
 // <Route path={process.env.PUBLIC_URL + "/"} exact component={Home} /> this URL did not work, although it should work for both deployed and developer version as Hadi said!?
 // destructing projects with space in the key does not work > temp solution: make it one word
+
+// rejected ideas:
+// passing data through App into a route, from route into child is too complicated, it is not impressive, it's just stupid
+
+// // mapping through json file for projects
+// const projectItem = CodingProjects.map((proj) => {
+//   proj;
+//   console.log(proj);
+// });
+//  projFunc={projectItem}
+// instead I just import projects.json directly into ProjectItem
+
+// What I have learned:
+// It is more difficult to code everything first and then see that there is an issue
+// start npm asap so that you can see issues immediately
+// resolving problems later is more difficult because it is not clear where they come from, but if you change just one thing and then check
+// then you know it was that

@@ -1,19 +1,21 @@
 import React from "react";
 
-const ProjectItem = ({ proj }) => {
-  const {
-    id,
-    projectTitle,
-    shortDescription,
-    longDescription,
-    specialFeatures,
-    tools,
-    source,
-  } = proj;
-  console.log({ proj });
-  console.log({ id });
-  console.log({ projectTitle });
-  console.log(proj.projectTitle);
+const ProjectItem = (codingProjects) => {
+  console.log("from projectItem >>");
+  console.log(codingProjects);
+  //   const {
+  //     id,
+  //     projectTitle,
+  //     shortDescription,
+  //     longDescription,
+  //     specialFeatures,
+  //     tools,
+  //     source,
+  //   } = proj;
+  //   console.log({ proj });
+  //   console.log({ id });
+  //   console.log({ projectTitle });
+  //   console.log(proj.projectTitle);
 
   return <div className="projectItem-wrapper">PROJECTItem</div>;
 };
