@@ -9,7 +9,7 @@ const ProjectItem = ({ codingProjects }) => {
       projectTitle,
       shortDescription,
       longDescription,
-      specialFeatures,
+      keywords,
       tools,
       source,
     } = proj;
@@ -18,17 +18,12 @@ const ProjectItem = ({ codingProjects }) => {
         <img src={source} />
         <h3>{projectTitle}</h3>
         <h4>{shortDescription}</h4>
-        <h4>Keywords: {specialFeatures}</h4>
+        <h4>Keywords: {keywords}</h4>
         <h4>Tools used: {tools}</h4>
         <p>{longDescription}</p>
       </li>
     );
   });
-
-  //   console.log({ proj });
-  //   console.log({ id });
-  //   console.log({ projectTitle });
-  //   console.log(proj.projectTitle);
 
   return (
     <React.Fragment>
