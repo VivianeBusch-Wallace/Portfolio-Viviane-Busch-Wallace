@@ -3,10 +3,11 @@ import React from "react";
 // importing ProjectItem
 import ProjectItem from "./ProjectItem";
 
-const Projects = ({ proj }) => {
+const Projects = ({ projFunc }) => {
+  console.log({ projFunc });
   return (
     <div className="projects-wrapper">
-      <ProjectItem proj={proj} />
+      <ProjectItem proj={projFunc} />
     </div>
   );
 };

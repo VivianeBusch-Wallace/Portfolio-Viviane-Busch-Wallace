@@ -15,17 +15,7 @@ function App() {
   console.log(process.env.PUBLIC_URL);
 
   // mapping through json file for projects
-  const projectItem = CodingProjects.map((proj) => {
-    const {
-      id,
-      projectTitle,
-      shortDescription,
-      longDescription,
-      specialFeatures,
-      tools,
-      source,
-    } = proj;
-  });
+  const projectItem = CodingProjects.map((proj) => proj);
 
   return (
     <Router>
@@ -39,7 +29,7 @@ function App() {
         <Route
           path="/projects"
           exact
-          component={() => <Projects proj={proj} />}
+          component={() => <Projects projFunc={projectItem} />}
         />
         <Route path="/contact" exact component={Contact} />
         <Route path={() => "/main" || "/anything"}>
@@ -60,4 +50,5 @@ export default App;
 // when send props write route differently
 
 // issues encountered:
+// <Route path={process.env.PUBLIC_URL + "/"} exact component={Home} /> this URL did not work, although it should work for both deployed and developer version as Hadi said!?
 // destructing projects with space in the key does not work > temp solution: make it one word
