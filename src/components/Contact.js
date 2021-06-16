@@ -16,6 +16,9 @@ library.add(fab, far);
 const Contact = () => {
   return (
     <div className="contact-wrapper">
+      {
+        // social media contact with links
+      }
       <div className="social-media">
         <h3>
           Give me a holler! <FontAwesomeIcon icon={["far", "bell"]} />
@@ -49,6 +52,9 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      {
+        // contact form
+      }
       <form>
         <label for="firstname">First Name</label>
         <input type="text" id="firstname" placeholder="Your first name" />
@@ -61,9 +67,23 @@ const Contact = () => {
 
         <textarea placeholder="Write me..."></textarea>
 
+        <FontAwesomeIcon icon={["far", "paper-plane"]} />
         <input type="submit" value="Submit" />
       </form>
     </div>
   );
 };
 export default Contact;
+
+// Notes during coding
+
+// ideas:
+// styling textarea: resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+
+// do not forget:
+// hover effect on button!
+// clean up code
+
+// issues encountered:
+// cannot add fa icon to button
+// fa has to be imported into every component, although otherwise said > solution add to app and send as prop???
