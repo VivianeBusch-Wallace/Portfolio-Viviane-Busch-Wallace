@@ -1,17 +1,29 @@
 import React from "react";
 
 // importing fontawesome icons
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { far } from "@fortawesome/free-regular-svg-icons";
+// import {
+//   faCheckSquare,
+//   faCoffee,
+//   faBell,
+// } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// adding icons to fontawesome library
+library.add(fab, far);
 
 const Contact = () => {
   return (
     <div className="contact-wrapper">
       <div className="social-media">
-        <h3>Contact me!</h3>
-        <p>Have questions? Wanna chat? This is where you can find me:</p>
+        <h3>
+          Give me a holler! <FontAwesomeIcon icon={["far", "bell"]} />
+        </h3>
         <div class="social-media icon-container">
           <div class="icon">
             <a href="https://github.com/VivianeBusch-Wallace">
-              <i class="fab fa-github-square"></i>
+              <FontAwesomeIcon icon={["fab", "github-square"]} />
             </a>
           </div>
           <div class="icon">
@@ -19,7 +31,7 @@ const Contact = () => {
               href="https://www.linkedin.com/in/viviane-busch-wallace-68a117179/"
               target="_blank"
             >
-              <i class="fab fa-linkedin"></i>
+              <FontAwesomeIcon icon={["fab", "linkedin"]} />
             </a>
           </div>
           <div class="icon">
@@ -27,20 +39,12 @@ const Contact = () => {
               href="https://www.xing.com/profile/VivianeWei_BuschWallace/cv"
               target="_blank"
             >
-              <i class="fab fa-xing-square"></i>
+              <FontAwesomeIcon icon={["fab", "xing-square"]} />
             </a>
           </div>
           <div class="icon">
             <a href="https://instagram.com/vivianewallaceart" target="_blank">
-              <i class="fab fa-instagram-square"></i>
-            </a>
-          </div>
-          <div class="icon">
-            <a
-              href="https://www.facebook.com/vivianebuschwallace"
-              target="_blank"
-            >
-              <i class="fab fa-facebook-square"></i>
+              <FontAwesomeIcon icon={["fab", "instagram-square"]} />
             </a>
           </div>
         </div>
