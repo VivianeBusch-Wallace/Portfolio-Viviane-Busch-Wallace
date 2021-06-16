@@ -1,4 +1,7 @@
 import React from "react";
+
+// importing fontawesome icons
+
 const Contact = () => {
   return (
     <div className="contact-wrapper">
