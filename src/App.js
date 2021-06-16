@@ -70,3 +70,5 @@ export default App;
 // start npm asap so that you can see issues immediately
 // resolving problems later is more difficult because it is not clear where they come from, but if you change just one thing and then check
 // then you know it was that
+
+//  "_homepage": "https://vivianebusch-wallace.github.io/Portfolio-Viviane-Busch-Wallace/",

@@ -1,18 +1,14 @@
 import React from "react";
 const About = () => {
-  return <div className="about-wrapper">ABOUT</div>;
-};
-export default About;
-
-{
-  /* <section id="about">
+  return (
+    <div className="about-wrapper">
       <h3>About me</h3>
-      <div class="about-me">
-        <div class="profile-pic">
+      <div className="about-me">
+        <div className="profile-pic">
           <img
-            src="./img/Viviane-Busch-Wallace.jpg"
+            src="./images/Viviane-Busch-Wallace.jpg"
             alt="pic-of-Viviane"
-            class="viviane"
+            className="viviane"
           />
         </div>
         <p>
@@ -26,42 +22,42 @@ export default About;
           Digital Career Institute.
         </p>
       </div>
-      <div class="skills-container">
-        <div class="skill-levels">
+      <div className="skills-container">
+        <div className="skill-levels">
           <h4>My language skills</h4>
           <label for="German">German</label>
-          <div class="skill-bar">
-            <div class="lang German"></div>
+          <div className="skill-bar">
+            <div className="lang German"></div>
           </div>
           <label for="English">English</label>
-          <div class="skill-bar">
-            <div class="lang English"></div>
+          <div className="skill-bar">
+            <div className="lang English"></div>
           </div>
           <label for="Chinese">Chinese</label>
-          <div class="skill-bar">
-            <div class="lang Chinese"></div>
+          <div className="skill-bar">
+            <div className="lang Chinese"></div>
           </div>
           <label for="Spanish">Spanish</label>
-          <div class="skill-bar">
-            <div class="lang Spanish"></div>
+          <div className="skill-bar">
+            <div className="lang Spanish"></div>
           </div>
         </div>
-        <div class="work-skills">
-          <i class="fab fa-js-square"></i>
-          <span class="hover-text js">JavaScript</span>
-          <i class="fab fa-css3-alt"></i>
-          <span class="hover-text css">CSS</span>
-          <i class="fab fa-html5"></i>
-          <span class="hover-text html">HTML5</span>
-          <i class="fas fa-file-word"></i>
-          <span class="hover-text word">Word</span>
-          <i class="fas fa-file-excel"></i>
-          <span class="hover-text excel">Excel</span>
-          <i class="fas fa-file-powerpoint"></i>
-          <span class="hover-text ppt">Powerpoint</span>
-          <i class="fas fa-pencil-ruler"></i>
-          <span class="hover-text draw">Drawing Programs</span>
+        <div className="work-skills">
+          <i className="fab fa-js-square"></i>
+          <span className="hover-text js">JavaScript</span>
+          <i className="fab fa-css3-alt"></i>
+          <span className="hover-text css">CSS</span>
+          <i className="fab fa-html5"></i>
+          <span className="hover-text html">HTML5</span>
+          <i className="fas fa-file-word"></i>
+          <span className="hover-text word">Word</span>
+          <i className="fas fa-file-excel"></i>
+          <span className="hover-text excel">Excel</span>
+          <i className="fas fa-file-powerpoint"></i>
+          <span className="hover-text ppt">Sass</span>
         </div>
       </div>
-    </section> */
-}
+    </div>
+  );
+};
+export default About;
