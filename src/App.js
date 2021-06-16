@@ -8,13 +8,13 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
-// import projects json (then map and send to projects component)
+// import projects json (then send to ProjectItems through Projects)
 import CodingProjects from "./projects.json";
 
 function App() {
-  // console.log(process.env.PUBLIC_URL);
   console.log("from App >>");
-  console.log(CodingProjects);
+  // console.log(process.env.PUBLIC_URL);
+  // console.log(CodingProjects);
 
   return (
     <Router>
@@ -31,7 +31,7 @@ function App() {
           component={() => <Projects codingProjects={CodingProjects} />}
         />
         <Route path="/contact" exact component={Contact} />
-        {/* this ensures that any url which is not given typed in manually will show the homepage as default => */}
+        {/* this ensures that any url which is not given and is typed in manually will show the homepage as default => */}
         <Route path={() => "/main" || "/anything"}>
           <Home />
         </Route>
