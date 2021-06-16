@@ -29,7 +29,6 @@ function App() {
   return (
     <Router>
       <Navigation />
-
       <Switch>
         {
           // <Route path={process.env.PUBLIC_URL + "/"} exact component={Home} />
@@ -53,7 +52,7 @@ export default App;
 // ideas:
 
 // do not forget:
-// when sedn props write route differently
+// when send props write route differently
 
 // issues encountered:
 // destructing projects with space in the key does not work > temp solution: make it one word
