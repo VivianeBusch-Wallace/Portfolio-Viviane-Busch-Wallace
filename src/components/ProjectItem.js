@@ -1,23 +1,40 @@
 import React from "react";
 
-const ProjectItem = (codingProjects) => {
+const ProjectItem = ({ codingProjects }) => {
   console.log("from projectItem >>");
   console.log(codingProjects);
-  //   const {
-  //     id,
-  //     projectTitle,
-  //     shortDescription,
-  //     longDescription,
-  //     specialFeatures,
-  //     tools,
-  //     source,
-  //   } = proj;
+  const eachProject = codingProjects.map((proj) => {
+    const {
+      id,
+      projectTitle,
+      shortDescription,
+      longDescription,
+      specialFeatures,
+      tools,
+      source,
+    } = proj;
+    return (
+      <li className="projectItem-wrapper" key={id}>
+        <img src={source} />
+        <h3>{projectTitle}</h3>
+        <h4>{shortDescription}</h4>
+        <h4>Keywords: {specialFeatures}</h4>
+        <h4>Tools used: {tools}</h4>
+        <p>{longDescription}</p>
+      </li>
+    );
+  });
+
   //   console.log({ proj });
   //   console.log({ id });
   //   console.log({ projectTitle });
   //   console.log(proj.projectTitle);
 
-  return <div className="projectItem-wrapper">PROJECTItem</div>;
+  return (
+    <React.Fragment>
+      <ul className="projectItem-wrapper">{eachProject}</ul>
+    </React.Fragment>
+  );
 };
 export default ProjectItem;
 
