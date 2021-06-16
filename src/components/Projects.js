@@ -1,7 +1,14 @@
 import React from "react";
 
-const Projects = () => {
-  return <div className="projects-wrapper">PROJECTS</div>;
+// importing ProjectItem
+import ProjectItem from "./ProjectItem";
+
+const Projects = ({ proj }) => {
+  return (
+    <div className="projects-wrapper">
+      <ProjectItem proj={proj} />
+    </div>
+  );
 };
 export default Projects;
 

@@ -36,7 +36,11 @@ function App() {
         }
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={About} />
-        <Route path="/projects" exact component={Projects} />
+        <Route
+          path="/projects"
+          exact
+          component={() => <Projects proj={proj} />}
+        />
         <Route path="/contact" exact component={Contact} />
         <Route path={() => "/main" || "/anything"}>
           <Home />
