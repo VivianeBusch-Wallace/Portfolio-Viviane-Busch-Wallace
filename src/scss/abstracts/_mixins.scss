@@ -1,0 +1,14 @@
+@mixin center($flex-dir: row) {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  -webkit-flex-direction: $flex-dir;
+  -moz-flex-direction: $flex-dir;
+  -ms-flex-direction: $flex-dir;
+  -o-flex-direction: $flex-dir;
+  flex-direction: $flex-dir;
+  justify-content: center;
+  align-items: center;
+}
