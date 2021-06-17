@@ -48,6 +48,3 @@ export default ProjectItem;
 // test if image source works as json property or if need individual import
 
 // issues encountered:
-// where best to deconstruct proj?, here or parent or App?
-// why project stuff undefined?
-// cannot send through two levels of components???
