@@ -45,14 +45,19 @@ import CodingProjects from "./projects.json";
 
 // export default App;
 
+const navAnchors = ["Home", "About", "My Work", "Contact"];
+
 const App = () => (
   <ReactFullpage
     //fullpage options
     licenseKey={"YOUR_KEY_HERE"}
-    scrollingSpeed={1000} /* Options here */
+    scrollingSpeed={1500} /* Options here */
+    navigation
+    navigationTooltips={navAnchors}
     render={({ state, fullpageApi }) => {
       return (
         <ReactFullpage.Wrapper>
+          {/* <Navigation /> */}
           {/* <div className="section"> */}
           {/* <Route path="/" exact component={Home} /> */}
           <Home />
