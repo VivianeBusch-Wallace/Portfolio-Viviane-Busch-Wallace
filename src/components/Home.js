@@ -1,7 +1,7 @@
 import React from "react";
 
-// ReactFullpage
-import ReactFullpage from "@fullpage/react-fullpage";
+// // ReactFullpage
+// import ReactFullpage from "@fullpage/react-fullpage";
 
 const Home = () => {
   return (
