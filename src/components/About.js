@@ -89,3 +89,5 @@ export default About;
 // giphy div style
 // style="width:100%;height:0;padding-bottom:69%;position:relative;"
 // style="position:absolute"
+
+// source of squirrel giphy: https://giphy.com/gifs/squirrel-eden-l2JI2G6JqnSz8uEOk
