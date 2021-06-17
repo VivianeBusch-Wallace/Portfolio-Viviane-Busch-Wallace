@@ -62,8 +62,30 @@ const About = () => {
             <span className="hover-text ppt">Sass</span>
           </div>
         </div>
+        <div className="squirrel-giphy">
+          <div>
+            <iframe
+              src="https://giphy.com/embed/l2JI2G6JqnSz8uEOk"
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              className="giphy-embed"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <p>
+            {/* <a href="https://giphy.com/gifs/squirrel-eden-l2JI2G6JqnSz8uEOk">
+              via GIPHY
+            </a> */}
+          </p>
+        </div>
       </div>
     </div>
   );
 };
 export default About;
+
+//safety copies
+// giphy div style
+// style="width:100%;height:0;padding-bottom:69%;position:relative;"
+// style="position:absolute"

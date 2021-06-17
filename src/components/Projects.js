@@ -9,9 +9,9 @@ const Projects = ({ codingProjects }) => {
 
   return (
     <div className="section">
-      <div className="projects-wrapper">
+      <ul className="projects-wrapper">
         <ProjectItem codingProjects={codingProjects} />
-      </div>
+      </ul>
     </div>
   );
 };

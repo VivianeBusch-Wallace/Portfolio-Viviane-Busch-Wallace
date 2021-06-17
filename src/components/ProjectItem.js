@@ -31,11 +31,7 @@ const ProjectItem = ({ codingProjects }) => {
     );
   });
 
-  return (
-    <React.Fragment>
-      <ul className="projectItem-wrapper">{eachProject}</ul>
-    </React.Fragment>
-  );
+  return <React.Fragment>{eachProject}</React.Fragment>;
 };
 export default ProjectItem;
 
