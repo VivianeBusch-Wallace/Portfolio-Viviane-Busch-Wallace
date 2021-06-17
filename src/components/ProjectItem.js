@@ -19,12 +19,14 @@ const ProjectItem = ({ codingProjects }) => {
 
     return (
       <li className="projectItem-wrapper" key={id}>
-        <img src={`./images/${source}`} alt={source} className="projImage" />
-        <h3>{projectTitle}</h3>
-        <h4>{shortDescription}</h4>
-        <h4>Keywords: {keywords}</h4>
-        <h4>Tools used: {tools}</h4>
-        <p>{longDescription}</p>
+        <img src={`./images/${source}`} alt={source} className="proj-image" />
+        <div className="proj-description">
+          <h3>{projectTitle}</h3>
+          <h4>{shortDescription}</h4>
+          <h4>Keywords: {keywords}</h4>
+          <h4>Tools used: {tools}</h4>
+          <p>{longDescription}</p>
+        </div>
       </li>
     );
   });

@@ -29,6 +29,3 @@ export default Projects;
 // how to make an infinite gallery?
 
 // aborted ideas:
-// { projFunc }
-//   console.log({ projFunc });
-//  proj={projFunc}
