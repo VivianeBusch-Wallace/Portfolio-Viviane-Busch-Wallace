@@ -19,7 +19,7 @@ const ProjectItem = ({ codingProjects }) => {
 
     return (
       <li className="projectItem-wrapper" key={id}>
-        <img src={`./images/${source}`} alt={source} />
+        <img src={`./images/${source}`} alt={source} className="projImage" />
         <h3>{projectTitle}</h3>
         <h4>{shortDescription}</h4>
         <h4>Keywords: {keywords}</h4>
