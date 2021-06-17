@@ -1,5 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// ReactFullpage
+import ReactFullpage from "@fullpage/react-fullpage";
+// react router
+// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // importing all components
 import Navigation from "./components/Navigation";
@@ -11,35 +14,62 @@ import Contact from "./components/Contact";
 // import projects json (then send to ProjectItems through Projects)
 import CodingProjects from "./projects.json";
 
-function App() {
-  console.log("from App >>");
-  // console.log(process.env.PUBLIC_URL);
-  // console.log(CodingProjects);
+// function App() {
+//   console.log("from App >>");
+//   // console.log(process.env.PUBLIC_URL);
+//   // console.log(CodingProjects);
 
-  return (
-    <Router>
-      <Navigation />
-      <Switch>
-        {
-          // <Route path={process.env.PUBLIC_URL + "/"} exact component={Home} />
-        }
-        <Route path="/" exact component={Home} />
-        <Route path="/about" exact component={About} />
-        <Route
-          path="/projects"
-          exact
-          component={() => <Projects codingProjects={CodingProjects} />}
-        />
-        <Route path="/contact" exact component={Contact} />
-        {/* this ensures that any url which is not given and is typed in manually will show the homepage as default => */}
-        <Route path={() => "/main" || "/anything"}>
+//   return (
+//     <Router>
+//       <Navigation />
+//       <Switch>
+//         {
+//           // <Route path={process.env.PUBLIC_URL + "/"} exact component={Home} />
+//         }
+//         <Route path="/" exact component={Home} />
+//         <Route path="/about" exact component={About} />
+//         <Route
+//           path="/projects"
+//           exact
+//           component={() => <Projects codingProjects={CodingProjects} />}
+//         />
+//         <Route path="/contact" exact component={Contact} />
+//         {/* this ensures that any url which is not given and is typed in manually will show the homepage as default => */}
+//         <Route path={() => "/main" || "/anything"}>
+//           <Home />
+//         </Route>
+//       </Switch>
+//     </Router>
+//   );
+// }
+
+// export default App;
+
+const App = () => (
+  <ReactFullpage
+    //fullpage options
+    licenseKey={"YOUR_KEY_HERE"}
+    scrollingSpeed={1000} /* Options here */
+    render={({ state, fullpageApi }) => {
+      return (
+        <ReactFullpage.Wrapper>
+          {/* <div className="section"> */}
+          {/* <Route path="/" exact component={Home} /> */}
           <Home />
-        </Route>
-      </Switch>
-    </Router>
-  );
-}
-
+          {/* </div> */}
+          {/* <div className="section"> */}
+          {/* <Route path="/about" exact component={About} /> */}
+          <About />
+          {/*</div>
+           <div className="section"> */}
+          {/* <Route path="/contact" exact component={Contact} /> */}
+          <Contact />
+          {/*</div>*/}
+        </ReactFullpage.Wrapper>
+      );
+    }}
+  />
+);
 export default App;
 
 // Notes during coding

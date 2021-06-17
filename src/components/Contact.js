@@ -1,5 +1,8 @@
 import React from "react";
 
+// ReactFullpage
+import ReactFullpage from "@fullpage/react-fullpage";
+
 // importing fontawesome icons
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -15,61 +18,63 @@ library.add(fab, far);
 
 const Contact = () => {
   return (
-    <div className="contact-wrapper">
-      {
-        // social media contact with links
-      }
-      <div className="social-media">
-        <h3>
-          Give me a holler! <FontAwesomeIcon icon={["far", "bell"]} />
-        </h3>
-        <div class="social-media icon-container">
-          <div class="icon">
-            <a href="https://github.com/VivianeBusch-Wallace">
-              <FontAwesomeIcon icon={["fab", "github-square"]} />
-            </a>
-          </div>
-          <div class="icon">
-            <a
-              href="https://www.linkedin.com/in/viviane-busch-wallace-68a117179/"
-              target="_blank"
-            >
-              <FontAwesomeIcon icon={["fab", "linkedin"]} />
-            </a>
-          </div>
-          <div class="icon">
-            <a
-              href="https://www.xing.com/profile/VivianeWei_BuschWallace/cv"
-              target="_blank"
-            >
-              <FontAwesomeIcon icon={["fab", "xing-square"]} />
-            </a>
-          </div>
-          <div class="icon">
-            <a href="https://instagram.com/vivianewallaceart" target="_blank">
-              <FontAwesomeIcon icon={["fab", "instagram-square"]} />
-            </a>
+    <div className="section">
+      <div className="contact-wrapper">
+        {
+          // social media contact with links
+        }
+        <div className="social-media">
+          <h3>
+            Give me a holler! <FontAwesomeIcon icon={["far", "bell"]} />
+          </h3>
+          <div class="social-media icon-container">
+            <div class="icon">
+              <a href="https://github.com/VivianeBusch-Wallace">
+                <FontAwesomeIcon icon={["fab", "github-square"]} />
+              </a>
+            </div>
+            <div class="icon">
+              <a
+                href="https://www.linkedin.com/in/viviane-busch-wallace-68a117179/"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={["fab", "linkedin"]} />
+              </a>
+            </div>
+            <div class="icon">
+              <a
+                href="https://www.xing.com/profile/VivianeWei_BuschWallace/cv"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={["fab", "xing-square"]} />
+              </a>
+            </div>
+            <div class="icon">
+              <a href="https://instagram.com/vivianewallaceart" target="_blank">
+                <FontAwesomeIcon icon={["fab", "instagram-square"]} />
+              </a>
+            </div>
           </div>
         </div>
+        {
+          // contact form
+        }
+        <form>
+          <label for="firstname">First Name</label>
+          <input type="text" id="firstname" placeholder="Your first name" />
+
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" placeholder="Your last name" />
+
+          <label for="email">Last Name</label>
+          <input type="email" id="email" placeholder="Your e-mail address" />
+
+          <textarea placeholder="Write me..."></textarea>
+
+          <FontAwesomeIcon icon={["far", "paper-plane"]} />
+          <input type="submit" value="Submit" />
+        </form>
       </div>
-      {
-        // contact form
-      }
-      <form>
-        <label for="firstname">First Name</label>
-        <input type="text" id="firstname" placeholder="Your first name" />
-
-        <label for="lastname">Last Name</label>
-        <input type="text" id="lastname" placeholder="Your last name" />
-
-        <label for="email">Last Name</label>
-        <input type="email" id="email" placeholder="Your e-mail address" />
-
-        <textarea placeholder="Write me..."></textarea>
-
-        <FontAwesomeIcon icon={["far", "paper-plane"]} />
-        <input type="submit" value="Submit" />
-      </form>
     </div>
   );
 };
