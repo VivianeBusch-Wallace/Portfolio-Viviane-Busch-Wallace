@@ -2,9 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 }
 
 body {
   height: 100vh;
   width: 100vw;
+  background-color: #2f3e46;
+  background-color: #172f3b;
+  background: linear-gradient(#00a896, #028090);
 }
+
+// fullpage.js section
+// .section {
+//   background-color: #161a1d;
+// }

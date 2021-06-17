@@ -63,6 +63,7 @@ const App = () => (
           {/*</div>
            <div className="section"> */}
           {/* <Route path="/contact" exact component={Contact} /> */}
+          <Projects codingProjects={CodingProjects} />
           <Contact />
           {/*</div>*/}
         </ReactFullpage.Wrapper>

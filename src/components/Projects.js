@@ -8,8 +8,10 @@ const Projects = ({ codingProjects }) => {
   // console.log(codingProjects);
 
   return (
-    <div className="projects-wrapper">
-      <ProjectItem codingProjects={codingProjects} />
+    <div className="section">
+      <div className="projects-wrapper">
+        <ProjectItem codingProjects={codingProjects} />
+      </div>
     </div>
   );
 };
