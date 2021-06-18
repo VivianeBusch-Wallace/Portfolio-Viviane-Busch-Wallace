@@ -1,4 +1,4 @@
-@mixin center($flex-dir: row) {
+@mixin center($flex-dir: row, $justify-content: center, $align-items: center) {
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -9,8 +9,8 @@
   -ms-flex-direction: $flex-dir;
   -o-flex-direction: $flex-dir;
   flex-direction: $flex-dir;
-  justify-content: center;
-  align-items: center;
+  justify-content: $justify-content;
+  align-items: $align-items;
 }
 
 @mixin font-face($font-family, $file-path, $weight: normal) {
@@ -18,5 +18,22 @@
     font-family: $font-family;
     src: url($file-path);
     font-weight: $weight;
+  }
+}
+
+@mixin animation-proj($delay: 0s) {
+  animation: move-to-front 3s infinite $delay ease-in;
+
+  @keyframes move-to-front {
+    0% {
+    }
+    // 90% {
+    //   opacity: 1;
+    // }
+    100% {
+      transform: translate(5vw, 5vw);
+      // opacity: 0;
+      z-index: -1;
+    }
   }
 }

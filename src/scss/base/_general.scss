@@ -1,0 +1,10 @@
+// styling navigation of fullpage.js
+// Navigation titles
+#fp-nav ul li .fp-tooltip {
+  font-size: 20px;
+}
+// navigation dots
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: white;
+}

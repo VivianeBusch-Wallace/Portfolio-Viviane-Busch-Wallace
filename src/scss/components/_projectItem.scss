@@ -1,15 +1,48 @@
 // projectItem-wrapper (li)
 .projectItem-wrapper {
   list-style: none;
-  @include center(row);
+  width: 90vw;
+  height: auto;
+  @include center(row, flex-start, flex-start);
+  border: powderblue 3px solid;
+  position: absolute;
 }
-// screenshot of project
+// screenshots of project
 .proj-img {
   height: 30vw;
   width: auto;
+  margin-right: 2rem;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
 }
 .proj-image0 {
-  border: yellow 2px solid;
+  border: yellow 5px solid;
+  @include animation-proj();
+  z-index: 1;
+}
+.proj-image1 {
+  border: green 5px solid;
+  // display: none;
+  @include animation-proj(3s);
+  z-index: 2;
+}
+.proj-image2 {
+  border: blue 5px solid;
+  display: none;
+  // @include animation-proj(2s);
+}
+.proj-image3 {
+  border: orange 5px solid;
+  display: none;
+}
+.proj-image4 {
+  border: plum 5px solid;
+  display: none;
+}
+.proj-image5 {
+  border: plum 5px solid;
+  display: none;
 }
 
 // description of project

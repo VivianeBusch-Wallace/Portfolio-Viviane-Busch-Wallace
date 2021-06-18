@@ -1,4 +1,5 @@
 // project
 .projects-wrapper {
   @include center(column);
+  position: relative;
 }
