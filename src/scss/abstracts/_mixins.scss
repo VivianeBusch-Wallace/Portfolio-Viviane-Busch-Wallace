@@ -12,3 +12,11 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin font-face($font-family, $file-path, $weight: normal) {
+  @font-face {
+    font-family: $font-family;
+    src: url($file-path);
+    font-weight: $weight;
+  }
+}
