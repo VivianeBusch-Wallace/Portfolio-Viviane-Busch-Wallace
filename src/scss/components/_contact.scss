@@ -1,0 +1,8 @@
+@import "../abstracts/variables";
+
+// submit button
+input [type="submit"] {
+  :hover {
+    background: $background-gradient;
+  }
+}

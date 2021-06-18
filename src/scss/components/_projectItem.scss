@@ -4,9 +4,12 @@
   @include center(row);
 }
 // screenshot of project
-.proj-image {
+.proj-img {
   height: 30vw;
   width: auto;
+}
+.proj-image0 {
+  border: yellow 2px solid;
 }
 
 // description of project
