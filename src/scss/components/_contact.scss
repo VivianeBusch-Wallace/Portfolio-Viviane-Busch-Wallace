@@ -2,7 +2,11 @@
 
 // submit button
 input [type="submit"] {
+  background-color: red;
   :hover {
     background: $background-gradient;
   }
 }
+
+// issues:
+// why does background color not work for button?

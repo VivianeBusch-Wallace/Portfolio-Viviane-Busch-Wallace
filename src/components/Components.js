@@ -23,9 +23,9 @@ const Components = (codingProjects) => (
       return (
         <ReactFullpage.Wrapper>
           {/* <Navigation /> */}
-          <Home />
+          {/* <Home />
           <About />
-          <Projects codingProjects={codingProjects} />
+          <Projects codingProjects={codingProjects} /> */}
           <Contact />
         </ReactFullpage.Wrapper>
       );
