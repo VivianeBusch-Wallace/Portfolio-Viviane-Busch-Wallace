@@ -2,19 +2,37 @@
 
 // contact wrapper
 .contact-wrapper {
+  border: tomato 2px solid;
+  width: 70vw;
+  height: 90vh;
+  margin: auto;
+  @include center(column);
+
+  // social media icons
+  .icon-wrapper {
+    @include center(row, space-around);
+  }
+  // form
   form {
-    border: springgreen 2px solid;
     @include center(column, space-between);
+
+    border: springgreen 2px solid;
     width: 60vw;
     height: 20vw;
 
-    // submit button
-    input [type="submit"] {
-      background-color: red;
-      :hover {
-        background: $background-gradient;
-      }
+    // textarea for message
+    textarea {
+      align-self: flex-end;
     }
+
+    // submit button
+    // button input [type="submit"] {
+    //   background-color: red;
+    //   color: black;
+    //   :hover {
+    //     background: $background-gradient;
+    //   }
+    // }
   }
 }
 

@@ -27,7 +27,7 @@ const Contact = () => {
           <h3>
             Give me a holler! <FontAwesomeIcon icon={["far", "bell"]} />
           </h3>
-          <div class="social-media icon-container">
+          <div class="social-media icon-wrapper">
             <div class="icon">
               <a href="https://github.com/VivianeBusch-Wallace">
                 <FontAwesomeIcon icon={["fab", "github-square"]} />
@@ -60,15 +60,18 @@ const Contact = () => {
           // contact form
         }
         <form>
-          <label for="firstname">First Name</label>
-          <input type="text" id="firstname" placeholder="Your first name" />
-
-          <label for="lastname">Last Name</label>
-          <input type="text" id="lastname" placeholder="Your last name" />
-
-          <label for="email">Last Name</label>
-          <input type="email" id="email" placeholder="Your e-mail address" />
-
+          <div className="fn-wrapper">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" placeholder="Your first name" />
+          </div>
+          <div className="ln-wrapper">
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" placeholder="Your last name" />
+          </div>
+          <div className="email-wrapper">
+            <label for="email">Last Name</label>
+            <input type="email" id="email" placeholder="Your e-mail address" />
+          </div>
           <textarea placeholder="Write me..."></textarea>
 
           <FontAwesomeIcon icon={["far", "paper-plane"]} />

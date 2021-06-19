@@ -15,6 +15,15 @@ body {
   height: inherit;
 }
 // fullpage.js section
-.section {
-  border: #161a1d 2px solid;
+.section,
+.fp-tableCell {
+  border: #d4304b 10px solid;
+  // height: 100vh; // issue
+  // width: 40vw; //issue
 }
+.fp-tableCell {
+  border: khaki 10px solid;
+  // width: 50vw; //issue
+}
+// issues encountered:
+// .section does not accept height and width measurements, it's not the only wrapper of elements
