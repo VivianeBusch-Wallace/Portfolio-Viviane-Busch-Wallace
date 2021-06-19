@@ -1,0 +1,19 @@
+// loading outer most wrapper
+.loading {
+  width: inherit; // 100vw, same as #root
+  height: inherit; // 100vh, same as #root
+  @include center(column);
+  background-color: black;
+  h2 {
+    font-size: 30px;
+  }
+}
+
+.squirrel-giphy {
+  margin-top: 2rem;
+  iframe {
+    width: 23vw;
+    height: 15vw;
+    // border: khaki 1px solid;
+  }
+}

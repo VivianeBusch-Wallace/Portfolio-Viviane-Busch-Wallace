@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const Loading = () => {
   return (
     <div className="section loading">
-      <h3>Loading finished</h3>
+      <h2>Collecting all nuts for you...</h2>
       <div className="squirrel-giphy">
         <div>
           <iframe
@@ -25,3 +25,6 @@ const Loading = () => {
   );
 };
 export default Loading;
+
+// issues encountered:
+// who is the parent of Loading, if not body? body's width and height are set, yet when I make loading inherit it, it does not work.
