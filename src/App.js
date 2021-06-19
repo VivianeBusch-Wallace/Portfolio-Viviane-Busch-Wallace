@@ -11,13 +11,15 @@ function App() {
   console.log("from App >>");
   // console.log(process.env.PUBLIC_URL);
   // console.log(CodingProjects);
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  }, []);
-  if (loading) return <Loading />;
+
+  // setting up loading page
+  // const [loading, setLoading] = useState(true);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 2000);
+  // }, []);
+  // if (loading) return <Loading />;
 
   return <Components codingProjects={CodingProjects} />;
 }
