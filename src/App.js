@@ -1,17 +1,8 @@
 import React, { useState, useEffect } from "react";
-// ReactFullpage
-// import ReactFullpage from "@fullpage/react-fullpage";
-// react router
-// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-// importing all components
+// importing components
 import Loading from "./components/Loading";
 import Components from "./components/Components";
-// import Navigation from "./components/Navigation";
-// import Home from "./components/Home";
-// import About from "./components/About";
-// import Projects from "./components/Projects";
-// import Contact from "./components/Contact";
 
 // import projects json (then send to ProjectItems through Projects)
 import CodingProjects from "./projects.json";

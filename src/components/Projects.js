@@ -28,5 +28,3 @@ export default Projects;
 
 // issues encountered:
 // how to make an infinite gallery?
-
-// aborted ideas:

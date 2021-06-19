@@ -45,6 +45,6 @@ export default ProjectItem;
 
 // do not forget:
 // receive data information through parent projects, but deconstructed
-// test if image source works as json property or if need individual import
 
 // issues encountered:
+// why need codingProjects.codingProjects.map to map??? why is it nested and if it is nested because of the levels it goes through then why isn't it nested deeper?
