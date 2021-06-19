@@ -50,7 +50,8 @@ const navAnchors = ["Home", "About", "My Work", "Contact"];
 const App = () => (
   <ReactFullpage
     //fullpage options
-    licenseKey={"YOUR_KEY_HERE"}
+    // licenseKey={"YOUR_KEY_HERE"}
+    // my key is "personal use"
     scrollingSpeed={1500} /* Options here */
     navigation
     navigationTooltips={navAnchors}
