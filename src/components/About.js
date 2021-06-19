@@ -59,6 +59,11 @@ const About = () => {
             <span className="hover-text ppt">Sass</span>
           </div>
         </div>
+        <div className="cv-download-wrapper">
+          <a href="#CV" download>
+            Download Viviane's Resume
+          </a>
+        </div>
       </div>
     </div>
   );
