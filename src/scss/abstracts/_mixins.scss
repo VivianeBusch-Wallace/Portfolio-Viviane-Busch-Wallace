@@ -1,3 +1,4 @@
+// flex center
 @mixin center($flex-dir: row, $justify-content: center, $align-items: center) {
   -webkit-display: flex;
   -moz-display: flex;
@@ -12,7 +13,7 @@
   justify-content: $justify-content;
   align-items: $align-items;
 }
-
+// font
 @mixin font-face($font-family, $file-path, $weight: normal) {
   @font-face {
     font-family: $font-family;
@@ -21,6 +22,7 @@
   }
 }
 
+// animation for image slider
 @mixin animation-proj($delay: 0s) {
   animation: move-to-front 3s infinite $delay ease-in;
 
