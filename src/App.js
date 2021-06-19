@@ -24,6 +24,7 @@ function App() {
 
 export default App;
 
+// old version >>
 // const navAnchors = ["Home", "About", "My Work", "Contact"];
 
 // const App = () => (
@@ -50,7 +51,8 @@ export default App;
 // );
 // export default App;
 
-// Notes during coding
+// ==============================================================
+// Notes during coding >>
 
 // ideas:
 // general plan is to have cool scroll effect
