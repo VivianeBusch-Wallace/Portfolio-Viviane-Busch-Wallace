@@ -93,3 +93,4 @@ export default Contact;
 // issues encountered:
 // cannot add fa icon to button
 // fa has to be imported into every component, although otherwise said > solution add to app and send as prop???
+// cannot put contact-wrapper into section div, it for some reason disappears

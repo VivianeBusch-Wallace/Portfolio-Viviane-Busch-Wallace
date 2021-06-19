@@ -1,10 +1,20 @@
 @import "../abstracts/variables";
 
-// submit button
-input [type="submit"] {
-  background-color: red;
-  :hover {
-    background: $background-gradient;
+// contact wrapper
+.contact-wrapper {
+  form {
+    border: springgreen 2px solid;
+    @include center(column, space-between);
+    width: 60vw;
+    height: 20vw;
+
+    // submit button
+    input [type="submit"] {
+      background-color: red;
+      :hover {
+        background: $background-gradient;
+      }
+    }
   }
 }
 
