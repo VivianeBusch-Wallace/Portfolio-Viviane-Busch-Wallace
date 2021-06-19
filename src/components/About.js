@@ -1,8 +1,5 @@
 import React from "react";
 
-// // ReactFullpage
-// import ReactFullpage from "@fullpage/react-fullpage";
-
 const About = () => {
   return (
     <div className="section">
@@ -61,23 +58,6 @@ const About = () => {
             <i className="fas fa-file-powerpoint"></i>
             <span className="hover-text ppt">Sass</span>
           </div>
-        </div>
-        <div className="squirrel-giphy">
-          <div>
-            <iframe
-              src="https://giphy.com/embed/l2JI2G6JqnSz8uEOk"
-              width="100%"
-              height="100%"
-              frameBorder="0"
-              className="giphy-embed"
-              allowFullScreen
-            ></iframe>
-          </div>
-          <p>
-            {/* <a href="https://giphy.com/gifs/squirrel-eden-l2JI2G6JqnSz8uEOk">
-              via GIPHY
-            </a> */}
-          </p>
         </div>
       </div>
     </div>

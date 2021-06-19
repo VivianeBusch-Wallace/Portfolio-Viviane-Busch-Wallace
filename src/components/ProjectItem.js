@@ -2,9 +2,9 @@ import React from "react";
 
 const ProjectItem = ({ codingProjects }) => {
   console.log("from projectItem >>");
-  //   console.log(codingProjects);
+  console.log(codingProjects);
 
-  const eachProject = codingProjects.map((proj) => {
+  const eachProject = codingProjects.codingProjects.map((proj) => {
     const {
       id,
       projectTitle,

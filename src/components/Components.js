@@ -1,63 +1,51 @@
 import React, { useState, useEffect } from "react";
 // ReactFullpage
-// import ReactFullpage from "@fullpage/react-fullpage";
+import ReactFullpage from "@fullpage/react-fullpage";
 // react router
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // importing all components
-import Loading from "./components/Loading";
-import Components from "./components/Components";
+// import Loading from "./components/Loading";
 // import Navigation from "./components/Navigation";
 // import Home from "./components/Home";
 // import About from "./components/About";
 // import Projects from "./components/Projects";
 // import Contact from "./components/Contact";
+import Loading from "./Loading";
+import Navigation from "./Navigation";
+import Home from "./Home";
+import About from "./About";
+import Projects from "./Projects";
+import Contact from "./Contact";
 
 // import projects json (then send to ProjectItems through Projects)
-import CodingProjects from "./projects.json";
+// import CodingProjects from "../projects.json";
 
-function App() {
-  console.log("from App >>");
-  // console.log(process.env.PUBLIC_URL);
-  // console.log(CodingProjects);
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  }, []);
-  if (loading) return <Loading />;
+const navAnchors = ["Home", "About", "My Work", "Contact"];
 
-  return <Components codingProjects={CodingProjects} />;
-}
-
-export default App;
-
-// const navAnchors = ["Home", "About", "My Work", "Contact"];
-
-// const App = () => (
-//   <ReactFullpage
-//     //fullpage options
-//     // licenseKey={"YOUR_KEY_HERE"}
-//     // my key is "personal use"
-//     scrollingSpeed={1500} /* Options here */
-//     navigation
-//     navigationTooltips={navAnchors}
-//     render={({ state, fullpageApi }) => {
-//       return (
-//         <ReactFullpage.Wrapper>
-//           {/* <Navigation /> */}
-//           <Loading />
-//           <Home />
-//           <About />
-//           <Projects codingProjects={CodingProjects} />
-//           <Contact />
-//         </ReactFullpage.Wrapper>
-//       );
-//     }}
-//   />
-// );
-// export default App;
+const Components = (codingProjects) => (
+  <ReactFullpage
+    //fullpage options
+    // licenseKey={"YOUR_KEY_HERE"}
+    // my key is "personal use"
+    scrollingSpeed={1500} /* Options here */
+    navigation
+    navigationTooltips={navAnchors}
+    render={({ state, fullpageApi }) => {
+      return (
+        <ReactFullpage.Wrapper>
+          {/* <Navigation /> */}
+          {/* <Loading /> */}
+          <Home />
+          <About />
+          <Projects codingProjects={codingProjects} />
+          <Contact />
+        </ReactFullpage.Wrapper>
+      );
+    }}
+  />
+);
+export default Components;
 
 // Notes during coding
 
