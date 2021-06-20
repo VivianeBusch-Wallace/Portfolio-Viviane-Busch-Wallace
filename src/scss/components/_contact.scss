@@ -30,6 +30,7 @@ textarea,
   border: yellow 1px solid;
 }
 
+.icon,
 input,
 textarea,
 .submit-btn {
@@ -89,7 +90,8 @@ textarea,
       @include center(row);
       border-radius: $border-radius;
       &:hover {
-        animation: make-circle 2s 1 alternate forwards;
+        border-radius: 50%;
+        transition: 0.8s;
       }
     }
   }

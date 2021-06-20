@@ -1,3 +1,5 @@
+// animations for contact page
+// phone shaking animation
 @keyframes shake {
   0% {
     transform: translate(1px, 1px) rotate(0deg);
@@ -35,7 +37,6 @@
 }
 
 // paper plane animation
-
 @keyframes fly-away {
   0% {
     transform: translate(0, -1vw) rotate(0deg);
