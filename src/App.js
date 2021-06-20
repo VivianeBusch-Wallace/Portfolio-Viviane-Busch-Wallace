@@ -7,11 +7,11 @@ import Components from "./components/Components";
 // import projects json (then send to ProjectItems through Projects)
 import CodingProjects from "./projects.json";
 
-function App() {
+function App(props) {
   console.log("from App >>");
   // console.log(process.env.PUBLIC_URL);
   // console.log(CodingProjects);
-
+  console.log(props);
   // setting up loading page
   // const [loading, setLoading] = useState(true);
   // useEffect(() => {

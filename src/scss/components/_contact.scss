@@ -10,16 +10,23 @@
 
   // social media icons
   .icon-wrapper {
-    @include center(row, space-around);
+    @include center(row, space-between);
     margin: 1rem;
+    font-size: 30px;
+    width: 30vw;
+    height: 2.7rem;
+    border: 2px red solid;
+    .icon {
+      border: 2px black solid;
+    }
   }
   // form
   form {
     @include center(column, space-between);
-
-    border: springgreen 2px solid;
     width: 60vw;
     height: auto;
+
+    border: springgreen 2px solid;
 
     // textarea for message
     textarea {
@@ -31,11 +38,12 @@
 
     // submit button
     .submit-btn {
-      background-color: red;
       background: $background-gradient;
       border: none;
       box-shadow: $boxshadow;
-      color: black;
+      // color: black;
+      font-weight: bold;
+      font-size: 17px;
       width: auto;
       height: auto;
       padding: 0.5rem 1rem;

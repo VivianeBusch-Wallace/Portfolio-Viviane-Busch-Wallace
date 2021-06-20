@@ -9,7 +9,7 @@
 // K2D font family
 @include font-face("K2D", "../vendors/K2D-Thin.ttf", 100);
 @include font-face("K2D", "../vendors/K2D-ThinItalic.ttf", 100);
-@include font-face("K2D", "../vendors/K2D-SemiBoldItalic", 600);
+@include font-face("K2D", "../vendors/K2D-SemiBoldItalic.ttf", 600);
 @include font-face("K2D", "../vendors/K2D-SemiBold.ttf", 600);
 @include font-face("K2D", "../vendors/K2D-Regular.ttf", 400);
 @include font-face("K2D", "../vendors/K2D-MediumItalic.ttf", 500);
@@ -23,3 +23,9 @@
 @include font-face("K2D", "../vendors/K2D-ExtraBold.ttf", 800);
 @include font-face("K2D", "../vendors/K2D-BoldItalic.ttf", 700);
 @include font-face("K2D", "../vendors/K2D-Bold.ttf", 700);
+
+// fonts found:
+// K2D
+// https://fonts.google.com/specimen/K2D?stylecount=6&preview.text=Hey,%20you%20found%20me!%20My%20name%20is%20Viviane%20Wei%20Busch-Wallace.%20Almost%20before%20we%20knew%20it,%20we%20had%20left%20the%20ground.&preview.text_type=custom#standard-styles
+// Playfair Display
+// https://fonts.google.com/specimen/Playfair+Display?stylecount=6&preview.text=Hey,%20you%20found%20me!%20My%20name%20is%20Viviane%20Wei%20Busch-Wallace.%20Almost%20before%20we%20knew%20it,%20we%20had%20left%20the%20ground.&preview.text_type=custom#standard-styles
