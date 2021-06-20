@@ -102,7 +102,7 @@ const Contact = () => {
                 />
               </div>
               <div className="email-wrapper">
-                <label for="email">Last Name</label>
+                <label for="email">E-mail Address</label>
                 <input
                   type="email"
                   id="email"

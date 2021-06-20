@@ -26,6 +26,7 @@
 .ln-wrapper,
 .email-wrapper {
   border: yellow 1px solid;
+  margin-left: -5.8vw;
 }
 
 // contact wrapper
@@ -81,16 +82,16 @@
     border-radius: $border-radius;
     // all labels in form
     label {
-      align-self: flex-end;
+      align-self: flex-start;
+      margin-left: 0.3vw;
     }
 
     // all inputs in form (firstname, lastname, email)
     input {
-      width: 20vw;
+      width: 18vw;
       font-family: inherit;
       color: $blue;
       border-radius: $border-radius;
-      margin-left: 0.7rem;
       padding: 0.2rem 0.3rem;
       &::placeholder {
         color: $blue;
@@ -129,15 +130,18 @@
       font-family: inherit;
       font-weight: bold;
       font-size: 17px;
-
       cursor: pointer;
+      // submit button on hover
       &:hover {
         background: $light-blue-green;
         transition: ease-in 0.3s;
+        color: $grey;
+        // paper plane animation on hover of submit button
         & .plane {
           animation: fly-away 2s 1 linear forwards;
         }
       }
+      // submit button on click
       &:active {
         background: $blue;
         transition: ease-in 0.2s;
