@@ -22,13 +22,13 @@
   @include center(column);
 }
 
-.fn-wrapper,
-.ln-wrapper,
-.email-wrapper,
-textarea,
-.submit-btn {
-  border: yellow 1px solid;
-}
+// .fn-wrapper,
+// .ln-wrapper,
+// .email-wrapper,
+// textarea,
+// .submit-btn {
+//   border: yellow 1px solid;
+// }
 
 .icon,
 input,
@@ -47,7 +47,13 @@ textarea,
 
   //holler-phone-wrapper, the wrapper of contact title and icon
   .holler-phone-wrapper {
-    border: blueviolet 2px solid;
+    // border: blueviolet 2px solid;
+    background-color: $blue;
+    width: 40vw;
+    height: 6vh;
+    border-radius: $border-radius;
+    // to align wrapper with form
+    margin-left: 5vw;
   }
 
   // h2, title of contact form
@@ -65,7 +71,7 @@ textarea,
 
   // social-media-form-wrapper
   .social-media-form-wrapper {
-    border: white 2px solid;
+    // border: white 2px solid;
     @include center(row, space-between);
     margin-top: 2rem;
     width: 45vw;
@@ -83,8 +89,9 @@ textarea,
 
     // social media icons
     .icon {
-      border: 2px black solid;
+      // border: 2px black solid;
       color: $fontColor;
+      background: $background-gradient;
       width: 3rem;
       height: 3rem;
       @include center(row);
@@ -126,7 +133,7 @@ textarea,
     // textarea and submit button wrapper
     .textarea-submit-wrapper {
       @include center(column);
-      border: green 2px solid;
+      // border: green 2px solid;
     }
 
     // textarea for sending a message
