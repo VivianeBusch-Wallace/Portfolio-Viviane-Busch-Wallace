@@ -24,26 +24,31 @@
 
 .fn-wrapper,
 .ln-wrapper,
-.email-wrapper {
+.email-wrapper,
+textarea,
+.submit-btn {
   border: yellow 1px solid;
-  margin-left: -5.8vw;
+  box-shadow: $boxshadow;
 }
 
+// non-shared properties
 // contact wrapper
 .contact-wrapper {
-  border: tomato 2px solid;
+  border: black 2px solid;
   width: 70vw;
-  height: 90vh;
+  height: 80vh;
   margin: auto;
 
   //holler-phone-wrapper, the wrapper of contact title and icon
   .holler-phone-wrapper {
     border: blueviolet 2px solid;
   }
+
   // h2, title of contact form
   h2 {
     font-size: 35px;
   }
+
   // phone icon with title of contact animates 5 times
   .phone {
     animation: shake 0.7s 5 ease-out;
@@ -55,31 +60,36 @@
   // social-media-form-wrapper
   .social-media-form-wrapper {
     border: white 2px solid;
-    @include center(row);
+    @include center(row, space-between);
     margin-top: 2rem;
+    width: 45vw;
   }
 
   // social media icons
   .icon-wrapper {
     @include center(column, space-around);
-    margin: 1rem;
     font-size: 30px;
     height: 40vh;
     width: 2.7rem;
     border-radius: $border-radius;
     background-color: $blue;
+
+    // social media icons
     .icon {
       border: 2px black solid;
       color: $fontColor;
     }
   }
+
   // form
   form {
+    // form styles
     @include center(column, space-evenly);
-    width: 60vw;
+    width: 40vw;
     height: 60vh;
     background-color: $blue;
     border-radius: $border-radius;
+
     // all labels in form
     label {
       align-self: flex-start;
@@ -100,18 +110,19 @@
 
     // textarea and submit button wrapper
     .textarea-submit-wrapper {
-      @include center(row);
+      @include center(column);
       border: green 2px solid;
     }
-    // textarea for message
+
+    // textarea for sending a message
     textarea {
-      // align-self: flex-end;
       width: 18vw;
       height: 18vw;
       padding: 0.2rem 0.3rem;
       border-radius: $border-radius;
       color: $blue;
       font-family: inherit;
+      // textarea placeholder
       &::placeholder {
         color: $blue;
       }
@@ -119,28 +130,32 @@
 
     // submit button
     .submit-btn {
+      align-self: flex-end;
       background: $background-gradient;
       width: auto;
       height: auto;
+      margin-top: 0.3rem;
       padding: 0.5rem 1rem;
       border: none;
       border-radius: 0.4rem;
-      box-shadow: $boxshadow;
       color: $fontColor;
       font-family: inherit;
       font-weight: bold;
       font-size: 17px;
       cursor: pointer;
+
       // submit button on hover
       &:hover {
         background: $light-blue-green;
         transition: ease-in 0.3s;
         color: $grey;
+
         // paper plane animation on hover of submit button
         & .plane {
           animation: fly-away 2s 1 linear forwards;
         }
       }
+
       // submit button on click
       &:active {
         background: $blue;
