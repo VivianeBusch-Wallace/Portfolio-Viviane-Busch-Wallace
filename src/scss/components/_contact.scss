@@ -1,5 +1,12 @@
 @import "../abstracts/variables";
 
+// nesting for contact element
+// section > contact-wrapper > h2, social-media-form-wrapper
+// social-media-form-wrapper > social-media/icon-wrapper, form
+// social-media/icon-wrapper > icon*4 > a > FontAwesomeIcon
+// form > fn-wrapper, ln-wrapper, email-wrapper, textarea, button (type=submit)
+// fn-wrapper, ln-wrapper, email-wrapper > label, input (type=text||email)
+
 // contact wrapper
 .contact-wrapper {
   border: tomato 2px solid;
@@ -8,13 +15,25 @@
   margin: auto;
   @include center(column);
 
+  // h2, title of contact form
+  h2 {
+    font-size: 35px;
+  }
+
+  // social-media-form-wrapper
+  .social-media-form-wrapper {
+    border: white 2px solid;
+    @include center(row);
+    margin-top: 2rem;
+  }
+
   // social media icons
   .icon-wrapper {
-    @include center(row, space-between);
+    @include center(column, space-between);
     margin: 1rem;
     font-size: 30px;
-    width: 30vw;
-    height: 2.7rem;
+    height: 40vh;
+    width: 2.7rem;
     border: 2px red solid;
     .icon {
       border: 2px black solid;
@@ -47,6 +66,7 @@
       width: auto;
       height: auto;
       padding: 0.5rem 1rem;
+      cursor: pointer;
       // &:hover {
       //   background: $background-gradient;
       //   background-color: purple;
