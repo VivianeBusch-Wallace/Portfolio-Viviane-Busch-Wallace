@@ -7,6 +7,7 @@ import React from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 // import {
 //   faCheckSquare,
 //   faCoffee,
@@ -14,7 +15,7 @@ import { far } from "@fortawesome/free-regular-svg-icons";
 // } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // adding icons to fontawesome library
-library.add(fab, far);
+library.add(fab, far, faPhone);
 
 const Contact = () => {
   return (
@@ -23,9 +24,10 @@ const Contact = () => {
         {
           // social media contact with links
         }
-        <h2>
-          Give me a holler! <FontAwesomeIcon icon={["far", "bell"]} />
-        </h2>
+        <div className="holler-phone-wrapper">
+          <h2>Give me a holler!</h2>
+          <FontAwesomeIcon icon={["fas", "phone"]} />
+        </div>
         <div className="social-media-form-wrapper">
           <div className="social-media">
             <div class="social-media icon-wrapper">

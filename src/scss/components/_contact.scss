@@ -15,10 +15,16 @@
   margin: auto;
   @include center(column);
 
+  //holler-phone-wrapper, the wrapper of contact title and icon
+  .holler-phone-wrapper {
+    border: blueviolet 2px solid;
+    @include center(row);
+  }
   // h2, title of contact form
   h2 {
     font-size: 35px;
   }
+  // phone icon with title of contact
 
   // social-media-form-wrapper
   .social-media-form-wrapper {
