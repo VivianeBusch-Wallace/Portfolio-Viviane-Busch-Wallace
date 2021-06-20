@@ -28,6 +28,11 @@
 textarea,
 .submit-btn {
   border: yellow 1px solid;
+}
+
+input,
+textarea,
+.submit-btn {
   box-shadow: $boxshadow;
 }
 
@@ -70,7 +75,8 @@ textarea,
     @include center(column, space-around);
     font-size: 30px;
     height: 40vh;
-    width: 2.7rem;
+    width: auto;
+    padding: 0.5rem;
     border-radius: $border-radius;
     background-color: $blue;
 
@@ -78,6 +84,13 @@ textarea,
     .icon {
       border: 2px black solid;
       color: $fontColor;
+      width: 3rem;
+      height: 3rem;
+      @include center(row);
+      border-radius: $border-radius;
+      &:hover {
+        animation: make-circle 2s 1 alternate forwards;
+      }
     }
   }
 
