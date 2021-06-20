@@ -33,3 +33,45 @@
     transform: translate(1px, -2px) rotate(4deg);
   }
 }
+
+// paper plane animation
+
+@keyframes fly-away {
+  0% {
+    transform: translate(0, -1vw) rotate(0deg);
+  }
+  10% {
+    transform: translate(1vw, -2vw) rotate(5deg);
+  }
+  20% {
+    transform: translate(3vw, -2.5vw) rotate(5deg);
+  }
+  30% {
+    transform: translate(4.5vw, -3vw) rotate(-5deg);
+  }
+  40% {
+    transform: translate(6.5vw, -3.5vw) rotate(5deg);
+  }
+  50% {
+    transform: translate(8.5vw, -4vw) rotate(10deg);
+  }
+  60% {
+    transform: translate(10vw, -4.5vw) rotate(5deg);
+  }
+  70% {
+    transform: translate(13vw, -5.5vw) rotate(5deg);
+  }
+  80% {
+    transform: translate(16vw, -6.5vw) rotate(5deg);
+  }
+  90% {
+    transform: translate(19vw, -7.5vw) rotate(-5deg);
+    color: grey;
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(20vw, -7vw) rotate(5deg);
+    color: grey;
+    opacity: 0;
+  }
+}

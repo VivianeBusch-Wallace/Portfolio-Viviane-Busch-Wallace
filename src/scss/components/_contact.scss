@@ -77,6 +77,9 @@
     // submit button
     .submit-btn {
       background: $background-gradient;
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
       border: none;
       border-radius: 0.4rem;
       box-shadow: $boxshadow;
@@ -84,13 +87,18 @@
       font-family: inherit;
       font-weight: bold;
       font-size: 17px;
-      width: auto;
-      height: auto;
-      padding: 0.5rem 1rem;
+
       cursor: pointer;
       &:hover {
-        background: rgb(0, 177, 109);
+        background: $light-blue-green;
         transition: ease-in 0.3s;
+        & .plane {
+          animation: fly-away 2s 1 linear forwards;
+        }
+      }
+      &:active {
+        background: $blue;
+        transition: ease-in 0.2s;
       }
     }
   }
