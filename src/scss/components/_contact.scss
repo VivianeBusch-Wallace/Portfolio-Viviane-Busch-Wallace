@@ -50,15 +50,17 @@
     @include center(column, space-between);
     width: 60vw;
     height: auto;
-
     border: springgreen 2px solid;
-
+    input {
+      font-family: inherit;
+    }
     // textarea for message
     textarea {
       align-self: flex-end;
       width: 20vw;
       height: 20vw;
       color: rgb(53, 154, 236);
+      font-family: inherit;
     }
 
     // submit button
@@ -67,6 +69,7 @@
       border: none;
       box-shadow: $boxshadow;
       // color: black;
+      font-family: inherit;
       font-weight: bold;
       font-size: 17px;
       width: auto;
