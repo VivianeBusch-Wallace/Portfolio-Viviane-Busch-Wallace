@@ -98,15 +98,16 @@ const Contact = () => {
                 placeholder="Your e-mail address"
               />
             </div>
-            <textarea placeholder="Message..."></textarea>
-
-            <button type="submit" className="submit-btn">
-              Submit{" "}
-              <FontAwesomeIcon
-                icon={["far", "paper-plane"]}
-                className="fontAwe plane"
-              />
-            </button>
+            <div className="textarea-submit-wrapper">
+              <textarea placeholder="Message..."></textarea>
+              <button type="submit" className="submit-btn">
+                Submit{" "}
+                <FontAwesomeIcon
+                  icon={["far", "paper-plane"]}
+                  className="fontAwe plane"
+                />
+              </button>
+            </div>
           </form>
         </div>
       </div>

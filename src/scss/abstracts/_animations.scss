@@ -65,12 +65,12 @@
     transform: translate(16vw, -6.5vw) rotate(5deg);
   }
   90% {
-    transform: translate(19vw, -7.5vw) rotate(-5deg);
+    transform: translate(19vw, -7.5vw) rotate(-15deg);
     color: grey;
     opacity: 0.9;
   }
   100% {
-    transform: translate(20vw, -7vw) rotate(5deg);
+    transform: translate(20vw, -7vw) rotate(-10deg);
     color: grey;
     opacity: 0;
   }
