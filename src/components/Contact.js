@@ -25,8 +25,12 @@ const Contact = () => {
           // social media contact with links
         }
         <div className="holler-phone-wrapper">
-          <h2>Give me a holler!</h2>
-          <FontAwesomeIcon icon={["fas", "phone"]} />
+          <h2>Give me a holler! </h2>
+          <FontAwesomeIcon
+            icon={["fas", "phone"]}
+            size="lg"
+            className="fontAwe phone"
+          />
         </div>
         <div className="social-media-form-wrapper">
           <div className="social-media">
@@ -82,7 +86,7 @@ const Contact = () => {
                 placeholder="Your e-mail address"
               />
             </div>
-            <textarea placeholder="Write me..."></textarea>
+            <textarea placeholder="Message..."></textarea>
 
             <button type="submit" className="submit-btn">
               Submit <FontAwesomeIcon icon={["far", "paper-plane"]} />

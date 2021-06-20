@@ -1,0 +1,12 @@
+@keyframes move-to-front {
+  0% {
+  }
+  // 90% {
+  //   opacity: 1;
+  // }
+  100% {
+    transform: translate(5vw, 5vw);
+    // opacity: 0;
+    z-index: -1;
+  }
+}
