@@ -37,7 +37,10 @@ const Contact = () => {
             <div class="social-media icon-wrapper">
               <div class="icon">
                 <a href="https://github.com/VivianeBusch-Wallace">
-                  <FontAwesomeIcon icon={["fab", "github-square"]} />
+                  <FontAwesomeIcon
+                    icon={["fab", "github-square"]}
+                    className="fontAwe github"
+                  />
                 </a>
               </div>
               <div class="icon">
@@ -45,7 +48,10 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/viviane-busch-wallace-68a117179/"
                   target="_blank"
                 >
-                  <FontAwesomeIcon icon={["fab", "linkedin"]} />
+                  <FontAwesomeIcon
+                    icon={["fab", "linkedin"]}
+                    className="fontAwe linkedIn"
+                  />
                 </a>
               </div>
               <div class="icon">
@@ -53,7 +59,10 @@ const Contact = () => {
                   href="https://www.xing.com/profile/VivianeWei_BuschWallace/cv"
                   target="_blank"
                 >
-                  <FontAwesomeIcon icon={["fab", "xing-square"]} />
+                  <FontAwesomeIcon
+                    icon={["fab", "xing-square"]}
+                    className="fontAwe xing"
+                  />
                 </a>
               </div>
               <div class="icon">
@@ -61,7 +70,10 @@ const Contact = () => {
                   href="https://instagram.com/vivianewallaceart"
                   target="_blank"
                 >
-                  <FontAwesomeIcon icon={["fab", "instagram-square"]} />
+                  <FontAwesomeIcon
+                    icon={["fab", "instagram-square"]}
+                    className="fontAwe insta"
+                  />
                 </a>
               </div>
             </div>
@@ -89,7 +101,11 @@ const Contact = () => {
             <textarea placeholder="Message..."></textarea>
 
             <button type="submit" className="submit-btn">
-              Submit <FontAwesomeIcon icon={["far", "paper-plane"]} />
+              Submit{" "}
+              <FontAwesomeIcon
+                icon={["far", "paper-plane"]}
+                className="fontAwe plane"
+              />
             </button>
           </form>
         </div>

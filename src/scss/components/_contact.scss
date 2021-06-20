@@ -1,4 +1,8 @@
+// importing variables so that they can be applied here
 @import "../abstracts/variables";
+
+// importing animation keyframes for the animation shake
+@import "../abstracts/animations";
 
 // nesting for contact element
 // section > contact-wrapper > h2, social-media-form-wrapper
@@ -24,11 +28,12 @@
   h2 {
     font-size: 35px;
   }
-  // phone icon with title of contact
+  // phone icon with title of contact animates 7 times
   .phone {
-    color: blue;
-    background-color: lawngreen;
-    animation: shake 3s infinite ease-in;
+    animation: shake 0.7s 7 ease-out;
+    color: rgb(199, 16, 159);
+    font-size: 29px;
+    margin-left: 1rem;
   }
 
   // social-media-form-wrapper
@@ -48,6 +53,7 @@
     border: 2px red solid;
     .icon {
       border: 2px black solid;
+      color: $fontColor;
     }
   }
   // form
@@ -74,7 +80,7 @@
       border: none;
       border-radius: 0.4rem;
       box-shadow: $boxshadow;
-      // color: black;
+      color: $fontColor;
       font-family: inherit;
       font-weight: bold;
       font-size: 17px;
@@ -82,9 +88,9 @@
       height: auto;
       padding: 0.5rem 1rem;
       cursor: pointer;
-      &:active {
-        background-color: red;
-        border: lawngreen 2px solid;
+      &:hover {
+        background: rgb(0, 177, 109);
+        transition: ease-in 0.3s;
       }
     }
   }
