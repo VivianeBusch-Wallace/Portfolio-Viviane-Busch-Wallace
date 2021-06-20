@@ -19,18 +19,6 @@
   margin: auto;
   @include center(column);
 
-  // inputs (firstname, lastname, email)
-  input {
-    color: $blue;
-    border-radius: $border-radius;
-    margin-left: 0.7rem;
-    padding: 0.2rem;
-    // background-color: whitesmoke;
-    // &:focus {
-    //   color: $blue;
-    // }
-  }
-
   //holler-phone-wrapper, the wrapper of contact title and icon
   .holler-phone-wrapper {
     border: blueviolet 2px solid;
@@ -76,8 +64,18 @@
     height: 60vh;
     background-color: $blue;
     border-radius: $border-radius;
+
+    // inputs (firstname, lastname, email)
     input {
       font-family: inherit;
+      color: $blue;
+      border-radius: $border-radius;
+      margin-left: 0.7rem;
+      padding: 0.2rem 0.3rem;
+      // background-color: whitesmoke;
+      &::placeholder {
+        color: $blue;
+      }
     }
 
     // textarea and submit button wrapper
@@ -90,9 +88,13 @@
       // align-self: flex-end;
       width: 20vw;
       height: 20vw;
+      padding: 0.2rem 0.3rem;
       border-radius: $border-radius;
       color: $blue;
       font-family: inherit;
+      &::placeholder {
+        color: $blue;
+      }
     }
 
     // submit button
