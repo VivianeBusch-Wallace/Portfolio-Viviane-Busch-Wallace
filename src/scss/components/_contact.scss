@@ -60,7 +60,7 @@
 
   // social media icons
   .icon-wrapper {
-    @include center(column, space-between);
+    @include center(column, space-around);
     margin: 1rem;
     font-size: 30px;
     height: 40vh;
@@ -105,8 +105,8 @@
     // textarea for message
     textarea {
       // align-self: flex-end;
-      width: 20vw;
-      height: 20vw;
+      width: 18vw;
+      height: 18vw;
       padding: 0.2rem 0.3rem;
       border-radius: $border-radius;
       color: $blue;

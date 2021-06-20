@@ -88,7 +88,7 @@ const Contact = () => {
                 <input
                   type="text"
                   id="firstname"
-                  placeholder="Your first name"
+                  placeholder="First name"
                   required
                 />
               </div>
@@ -97,7 +97,7 @@ const Contact = () => {
                 <input
                   type="text"
                   id="lastname"
-                  placeholder="Your last name"
+                  placeholder="Last name"
                   required
                 />
               </div>
@@ -106,7 +106,7 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
-                  placeholder="Your e-mail address"
+                  placeholder="E-mail address"
                   required
                 />
               </div>
