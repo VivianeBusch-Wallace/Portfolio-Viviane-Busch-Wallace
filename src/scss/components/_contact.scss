@@ -33,7 +33,8 @@
     .submit-btn {
       background-color: red;
       background: $background-gradient;
-
+      border: none;
+      box-shadow: $boxshadow;
       color: black;
       width: auto;
       height: auto;
