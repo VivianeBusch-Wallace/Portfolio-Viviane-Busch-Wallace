@@ -25,7 +25,7 @@ const Contact = () => {
           // social media contact with links
         }
         <div className="holler-phone-wrapper">
-          <h2>Give me a holler! </h2>
+          <h2>Give me a sign! </h2>
           <FontAwesomeIcon
             icon={["fas", "phone"]}
             size="lg"
