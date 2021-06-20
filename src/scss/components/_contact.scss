@@ -40,7 +40,7 @@ textarea,
 // non-shared properties
 // contact wrapper
 .contact-wrapper {
-  border: black 2px solid;
+  // border: black 2px solid;
   width: 70vw;
   height: 80vh;
   margin: auto;
@@ -64,7 +64,6 @@ textarea,
   // phone icon with title of contact animates 5 times
   .phone {
     animation: shake 0.7s 5 ease-out;
-    color: rgb(199, 16, 159);
     font-size: 29px;
     margin-left: 1rem;
   }
