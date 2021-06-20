@@ -11,6 +11,7 @@
   // social media icons
   .icon-wrapper {
     @include center(row, space-around);
+    margin: 1rem;
   }
   // form
   form {
@@ -18,23 +19,33 @@
 
     border: springgreen 2px solid;
     width: 60vw;
-    height: 20vw;
+    height: auto;
 
     // textarea for message
     textarea {
       align-self: flex-end;
+      width: 20vw;
+      height: 20vw;
+      color: rgb(53, 154, 236);
     }
 
     // submit button
-    // button input [type="submit"] {
-    //   background-color: red;
-    //   color: black;
-    //   :hover {
-    //     background: $background-gradient;
-    //   }
-    // }
+    .submit-btn {
+      background-color: red;
+      background: $background-gradient;
+
+      color: black;
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      // &:hover {
+      //   background: $background-gradient;
+      //   background-color: purple;
+      // }
+    }
   }
 }
 
 // issues:
-// why does background color not work for button?
+// button hover does not work
+// button background color not working

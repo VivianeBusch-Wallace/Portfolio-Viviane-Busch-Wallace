@@ -75,7 +75,9 @@ const Contact = () => {
           <textarea placeholder="Write me..."></textarea>
 
           <FontAwesomeIcon icon={["far", "paper-plane"]} />
-          <input type="submit" value="Submit" />
+          <button type="button" className="submit-btn">
+            Submit
+          </button>
         </form>
       </div>
     </div>
