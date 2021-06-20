@@ -84,11 +84,21 @@ const Contact = () => {
           <form>
             <div className="fn-wrapper">
               <label for="firstname">First Name</label>
-              <input type="text" id="firstname" placeholder="Your first name" />
+              <input
+                type="text"
+                id="firstname"
+                placeholder="Your first name"
+                required
+              />
             </div>
             <div className="ln-wrapper">
               <label for="lastname">Last Name</label>
-              <input type="text" id="lastname" placeholder="Your last name" />
+              <input
+                type="text"
+                id="lastname"
+                placeholder="Your last name"
+                required
+              />
             </div>
             <div className="email-wrapper">
               <label for="email">Last Name</label>
@@ -96,10 +106,11 @@ const Contact = () => {
                 type="email"
                 id="email"
                 placeholder="Your e-mail address"
+                required
               />
             </div>
             <div className="textarea-submit-wrapper">
-              <textarea placeholder="Message..."></textarea>
+              <textarea placeholder="Message..." required></textarea>
               <button type="submit" className="submit-btn">
                 Submit{" "}
                 <FontAwesomeIcon

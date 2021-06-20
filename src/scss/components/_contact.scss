@@ -19,6 +19,15 @@
   margin: auto;
   @include center(column);
 
+  // inputs (firstname, lastname, email)
+  input {
+    color: $blue;
+    background-color: whitesmoke;
+    &:focus {
+      color: $blue;
+    }
+  }
+
   //holler-phone-wrapper, the wrapper of contact title and icon
   .holler-phone-wrapper {
     border: blueviolet 2px solid;
@@ -76,7 +85,7 @@
       // align-self: flex-end;
       width: 20vw;
       height: 20vw;
-      color: rgb(53, 154, 236);
+      color: $blue;
       font-family: inherit;
     }
 
