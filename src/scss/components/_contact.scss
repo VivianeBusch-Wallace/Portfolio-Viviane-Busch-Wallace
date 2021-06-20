@@ -11,18 +11,33 @@
 // form > fn-wrapper, ln-wrapper, email-wrapper, textarea, button (type=submit)
 // fn-wrapper, ln-wrapper, email-wrapper > label, input (type=text||email)
 
+// shared properties of elements
+.holler-phone-wrapper {
+  @include center(row);
+}
+.contact-wrapper,
+.fn-wrapper,
+.ln-wrapper,
+.email-wrapper {
+  @include center(column);
+}
+
+.fn-wrapper,
+.ln-wrapper,
+.email-wrapper {
+  border: yellow 1px solid;
+}
+
 // contact wrapper
 .contact-wrapper {
   border: tomato 2px solid;
   width: 70vw;
   height: 90vh;
   margin: auto;
-  @include center(column);
 
   //holler-phone-wrapper, the wrapper of contact title and icon
   .holler-phone-wrapper {
     border: blueviolet 2px solid;
-    @include center(row);
   }
   // h2, title of contact form
   h2 {
@@ -64,15 +79,19 @@
     height: 60vh;
     background-color: $blue;
     border-radius: $border-radius;
+    // all labels in form
+    label {
+      align-self: flex-end;
+    }
 
-    // inputs (firstname, lastname, email)
+    // all inputs in form (firstname, lastname, email)
     input {
+      width: 20vw;
       font-family: inherit;
       color: $blue;
       border-radius: $border-radius;
       margin-left: 0.7rem;
       padding: 0.2rem 0.3rem;
-      // background-color: whitesmoke;
       &::placeholder {
         color: $blue;
       }

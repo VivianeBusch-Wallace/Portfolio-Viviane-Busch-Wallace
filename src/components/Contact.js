@@ -82,32 +82,34 @@ const Contact = () => {
             // contact form
           }
           <form>
-            <div className="fn-wrapper">
-              <label for="firstname">First Name</label>
-              <input
-                type="text"
-                id="firstname"
-                placeholder="Your first name"
-                required
-              />
-            </div>
-            <div className="ln-wrapper">
-              <label for="lastname">Last Name</label>
-              <input
-                type="text"
-                id="lastname"
-                placeholder="Your last name"
-                required
-              />
-            </div>
-            <div className="email-wrapper">
-              <label for="email">Last Name</label>
-              <input
-                type="email"
-                id="email"
-                placeholder="Your e-mail address"
-                required
-              />
+            <div className="input-wrapper">
+              <div className="fn-wrapper">
+                <label for="firstname">First Name</label>
+                <input
+                  type="text"
+                  id="firstname"
+                  placeholder="Your first name"
+                  required
+                />
+              </div>
+              <div className="ln-wrapper">
+                <label for="lastname">Last Name</label>
+                <input
+                  type="text"
+                  id="lastname"
+                  placeholder="Your last name"
+                  required
+                />
+              </div>
+              <div className="email-wrapper">
+                <label for="email">Last Name</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Your e-mail address"
+                  required
+                />
+              </div>
             </div>
             <div className="textarea-submit-wrapper">
               <textarea placeholder="Message..." required></textarea>
