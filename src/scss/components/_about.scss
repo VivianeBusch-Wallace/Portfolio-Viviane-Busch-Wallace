@@ -42,10 +42,18 @@
   }
   // tech info - learning text and skill cloud
   .skills-wrapper {
-    //learning journey text
-    .learning-journey {
+    //what I love about coding text
+    .love-coding {
       border: yellow 2px solid;
       width: 40vw;
+      // list title
+      h3 {
+        font-size: 30px;
+      }
+      ul {
+        text-indent: 1rem;
+        list-style: none;
+      }
     }
     border: yellow 2px solid;
     // tech stats

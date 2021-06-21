@@ -25,10 +25,10 @@ const About = () => {
                 className="viviane"
               />
             </div>{" "}
-            <p>
+            <h3>
               I want to give the user an enjoyable experience while browsing the
               web.
-            </p>
+            </h3>
             <p>
               I am 31 years old and live in Hamburg, Germany. As a German - who
               is also half Chinese - I decided to spend some time in China after
@@ -40,7 +40,7 @@ const About = () => {
             </p>
           </div>
           <div className="skills-wrapper">
-            <div className="learning-journey">
+            <div className="love-coding">
               <h3>What I love about coding</h3>
               <ul>
                 <li>endless possibilities</li>
