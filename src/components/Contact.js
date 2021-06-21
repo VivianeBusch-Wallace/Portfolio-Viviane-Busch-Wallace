@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 // // ReactFullpage
 // import ReactFullpage from "@fullpage/react-fullpage";
@@ -18,6 +18,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 library.add(fab, far, faPhone);
 
 const Contact = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className="section">
       <div className="contact-wrapper">
@@ -99,7 +103,11 @@ const Contact = () => {
             <div className="textarea-submit-wrapper">
               <p className="placeholder message-placeholder">Message...</p>
               <textarea required></textarea>
-              <button type="submit" className="submit-btn">
+              <button
+                type="submit"
+                className="submit-btn"
+                onClick={handleSubmit}
+              >
                 Submit{" "}
                 <FontAwesomeIcon
                   icon={["far", "paper-plane"]}
