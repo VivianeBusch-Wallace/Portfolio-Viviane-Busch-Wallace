@@ -4,11 +4,13 @@ const Home = () => {
   return (
     <div className="section">
       <div className="home-wrapper">
+        {/* spinning circles */}
         <div className="silhouette">
           <div className="silhouette2">
             <div className="silhouette3"></div>
           </div>
         </div>
+        {/* lines on the left side */}
         <div className="welcome-animation">
           <div className="line" />
           <div className="line" />
@@ -51,6 +53,7 @@ const Home = () => {
           <div className="line" />
           <div className="line" />
         </div>
+        {/* welcome text */}
         <header className="hero">
           <div className="hero-text">
             <h1>

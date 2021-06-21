@@ -74,27 +74,32 @@
 // welcome text
 .hero {
   @include center();
-  margin-left: 45vw;
+  margin-left: 40vw;
 }
 .hero-text {
   height: 25vh;
-  width: 40vw;
+  width: auto;
   @include center(column, space-evenly, flex-start);
   border: 2px black solid;
+  text-transform: capitalize;
   h1 {
     margin-bottom: 2rem;
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 35px;
   }
   .swoosh-text {
     // border: blue 2px solid;
     margin-top: 5px;
     display: inline-block;
     width: auto;
-    height: 55px;
+    height: 40px;
     overflow: hidden;
     p {
-      padding-top: 14px;
-      margin-bottom: 2px;
-      animation: swoosh 5s infinite alternate linear 0.5s;
+      // padding-top: 14px;
+      // margin-bottom: 2px;
+      animation: swoosh 6s infinite alternate linear 0.5s;
     }
     .last-text {
       padding-bottom: 5px;
