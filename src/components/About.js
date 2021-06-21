@@ -1,5 +1,14 @@
 import React from "react";
 
+// importing fontawesome icons
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { far } from "@fortawesome/free-regular-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// adding icons to fontawesome library
+library.add(fab, far, faPhone);
+
 const About = () => {
   return (
     <div className="section">
@@ -45,7 +54,7 @@ const About = () => {
             </div>
           </div>
           <div className="work-skills">
-            <i className="fab fa-js-square"></i>
+            {/* <i className="fab fa-js-square"></i>
             <span className="hover-text js">JavaScript</span>
             <i className="fab fa-css3-alt"></i>
             <span className="hover-text css">CSS</span>
@@ -56,14 +65,46 @@ const About = () => {
             <i className="fas fa-file-excel"></i>
             <span className="hover-text excel">Excel</span>
             <i className="fas fa-file-powerpoint"></i>
-            <span className="hover-text ppt">Sass</span>
+            <span className="hover-text ppt">Sass</span> */}
+            <FontAwesomeIcon
+              icon={["fab", "react"]}
+              className="fontAwe react"
+              size="7x"
+            />
+
+            <FontAwesomeIcon
+              icon={["fab", "js-square"]}
+              className="fontAwe js"
+              size="7x"
+            />
+
+            <FontAwesomeIcon
+              icon={["fab", "sass"]}
+              className="fontAwe sass"
+              size="7x"
+            />
+            <FontAwesomeIcon
+              icon={["fab", "css3-alt"]}
+              className="fontAwe css"
+              size="7x"
+            />
+            <FontAwesomeIcon
+              icon={["fab", "html5"]}
+              className="fontAwe html"
+              size="7x"
+            />
+            <FontAwesomeIcon
+              icon={["fab", "bootstrap"]}
+              className="fontAwe bootstrap"
+              size="7x"
+            />
           </div>
         </div>
-        <div className="cv-download-wrapper">
+        {/* <div className="cv-download-wrapper">
           <a href="#CV" download>
             Download Viviane's Resume
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
