@@ -26,32 +26,11 @@ function App(props) {
 
 export default App;
 
-// old version >>
-// const navAnchors = ["Home", "About", "My Work", "Contact"];
+// giphy div style
+// style="width:100%;height:0;padding-bottom:69%;position:relative;"
+// style="position:absolute"
 
-// const App = () => (
-//   <ReactFullpage
-//     //fullpage options
-//     // licenseKey={"YOUR_KEY_HERE"}
-//     // my key is "personal use"
-//     scrollingSpeed={1500} /* Options here */
-//     navigation
-//     navigationTooltips={navAnchors}
-//     render={({ state, fullpageApi }) => {
-//       return (
-//         <ReactFullpage.Wrapper>
-//           {/* <Navigation /> */}
-//           <Loading />
-//           <Home />
-//           <About />
-//           <Projects codingProjects={CodingProjects} />
-//           <Contact />
-//         </ReactFullpage.Wrapper>
-//       );
-//     }}
-//   />
-// );
-// export default App;
+// source of squirrel giphy: https://giphy.com/gifs/squirrel-eden-l2JI2G6JqnSz8uEOk
 
 // ==============================================================
 // Notes during coding >>
