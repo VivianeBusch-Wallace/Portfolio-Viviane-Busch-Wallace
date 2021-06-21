@@ -1,3 +1,41 @@
+//about wrapper
+.about-wrapper {
+  border: yellow 2px solid;
+  //title
+  h3 {
+    border: yellow 2px solid;
+  }
+  // about me
+  .about-me {
+    border: yellow 2px solid;
+    .profile-pic {
+      border: yellow 2px solid;
+      img {
+        border: yellow 2px solid;
+      }
+    }
+    p {
+      border: yellow 2px solid;
+    }
+  }
+  .skills-container {
+    border: yellow 2px solid;
+    .skill-levels {
+      border: yellow 2px solid;
+      h4,
+      label,
+      .skill-bar {
+        border: yellow 2px solid;
+      }
+      .skillbar {
+        .lang {
+          border: yellow 2px solid;
+        }
+      }
+    }
+  }
+}
+
 // profile pic of About
 .viviane {
   height: 10vw;

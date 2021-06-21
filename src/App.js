@@ -13,13 +13,13 @@ function App(props) {
   // console.log(CodingProjects);
   console.log(props);
   // setting up loading page
-  // const [loading, setLoading] = useState(true);
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setLoading(false);
-  //   }, 2000);
-  // }, []);
-  // if (loading) return <Loading />;
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+  if (loading) return <Loading />;
 
   return <Components codingProjects={CodingProjects} />;
 }

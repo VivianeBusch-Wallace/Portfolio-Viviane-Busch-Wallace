@@ -11,29 +11,34 @@ import Contact from "./Contact";
 
 const navAnchors = ["Home", "About", "My Work", "Contact"];
 
-const Components = (codingProjects) => (
-  <ReactFullpage
-    //fullpage options
-    // licenseKey={"YOUR_KEY_HERE"}
-    // my key is: "personal use", which is free
-    scrollingSpeed={1500} /* Options here */
-    // autoScrolling={true}
-    // scrollHorizontally={true}
-    navigation
-    navigationTooltips={navAnchors}
-    render={({ state, fullpageApi }) => {
-      return (
-        <ReactFullpage.Wrapper>
-          {/* <Navigation /> */}
-          <Home />
-          {/* <About />
-          <Projects codingProjects={codingProjects} /> */}
-          <Contact />
-        </ReactFullpage.Wrapper>
-      );
-    }}
-  />
-);
+const Components = (codingProjects) => {
+  // useEffect();
+
+  return (
+    <ReactFullpage
+      //fullpage options
+      // licenseKey={"YOUR_KEY_HERE"}
+      // my key is: "personal use", which is free
+      scrollingSpeed={1500} /* Options here */
+      // autoScrolling={true}
+      // scrollHorizontally={true}
+      navigation
+      navigationTooltips={navAnchors}
+      render={({ state, fullpageApi }) => {
+        return (
+          <ReactFullpage.Wrapper>
+            {/* <Navigation /> */}
+            <Home />
+            <About />
+            <Projects codingProjects={codingProjects} />
+            <Contact />
+          </ReactFullpage.Wrapper>
+        );
+      }}
+    />
+  );
+};
+
 export default Components;
 
 // Notes during coding

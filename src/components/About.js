@@ -24,7 +24,7 @@ const About = () => {
             the Digital Career Institute.
           </p>
         </div>
-        <div className="skills-container">
+        <div className="skills-wrapper">
           <div className="skill-levels">
             <h4>My language skills</h4>
             <label for="German">German</label>
