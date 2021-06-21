@@ -7,13 +7,25 @@
   height: inherit;
   @include center(row, flex-start);
 }
+.silhouette,
+.welcome-animation {
+  position: absolute;
+}
+
+.silhouette {
+  width: 10vw;
+  height: 10vw;
+  background: $background-gradient-flipped;
+  border: violet 1px solid;
+  border-radius: 50%;
+  left: 20vw;
+}
 
 .welcome-animation {
   // border: 2px red solid;
   width: 35vw;
-  height: 70vh;
-  position: absolute;
-  // align-self: flex-start;
+  height: 80vh;
+  align-self: flex-end;
   z-index: -1;
   display: grid;
   grid-template-rows: repeat($line-count, 1fr);
@@ -21,16 +33,6 @@
   .line {
     background-color: $fontColor;
     // border: khaki 1px solid;
-    &::after {
-      content: "";
-      width: 100%;
-      position: absolute;
-      background-color: pink;
-      opacity: 0.5;
-      z-index: -1;
-      // border: 2px red solid;
-      transform: translateY(40%);
-    }
   }
 }
 
@@ -38,7 +40,9 @@
 @for $i from 1 through $line-count {
   .line:nth-child(#{$i}) {
     background: $blue;
-    width: random(30) + vw;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    width: random(20) + 10 + vw;
     transform-origin: 0 0;
     animation-name: move;
     animation-duration: random(2) + 2 + s;
@@ -47,23 +51,12 @@
     animation-direction: normal;
     animation-timing-function: cubic-bezier(0, 0.1, 0.795, 0.5);
     animation-play-state: running;
-    // &::after {
-    //   background-color: lawngreen;
-    //   width: random(4) + vw;
-    //   animation-name: move-child;
-    //   animation-duration: random(2) + 2 + s;
-    //   animation-delay: random(3) - 1 + s;
-    //   animation-iteration-count: infinite;
-    //   animation-direction: normal;
-    //   animation-timing-function: cubic-bezier(0, 0.1, 0.795, 0.5);
-    //   animation-play-state: running;
-    // }
   }
 }
 
 .hero {
   @include center();
-  margin-left: 40vw;
+  margin-left: 45vw;
 }
 .hero-text {
   height: 25vh;
