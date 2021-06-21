@@ -24,7 +24,11 @@ const About = () => {
                 alt="pic-of-Viviane"
                 className="viviane"
               />
-            </div>
+            </div>{" "}
+            <p>
+              I want to give the user an enjoyable experience while browsing the
+              web.
+            </p>
             <p>
               I am 31 years old and live in Hamburg, Germany. As a German - who
               is also half Chinese - I decided to spend some time in China after
@@ -37,15 +41,13 @@ const About = () => {
           </div>
           <div className="skills-wrapper">
             <div className="learning-journey">
-              <p>
-                As a learner of software engineering I love to work with
-                animations like with Sass or CSS, and Javascript to create
-                websites with great UI/UX design. I want to give the user an
-                enjoyable experience while browsing the web. Right now I am
-                working on my web development skills studying at the Digital
-                Career Institute. But I am eager to learn more and hope to
-                continue my journey even after this course.
-              </p>
+              <h3>What I love about coding</h3>
+              <ul>
+                <li>endless possibilities</li>
+                <li>UI/UX design</li>
+                <li>earning new things</li>
+                <li>it's a fun adventure</li>
+              </ul>
             </div>
 
             <div className="work-skills">
