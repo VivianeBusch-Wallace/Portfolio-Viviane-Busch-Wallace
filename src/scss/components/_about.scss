@@ -46,22 +46,61 @@
     .love-coding {
       border: yellow 2px solid;
       width: 40vw;
+      position: relative;
+      cursor: pointer;
+
       // list title
       h3 {
-        font-size: 30px;
+        font-size: 26px;
       }
+      // list
       ul {
+        width: auto;
+        height: auto;
+        background-color: $blue;
+        border: brown 2px solid;
         text-indent: 1rem;
         list-style: none;
+        position: absolute;
+        display: none;
+        // top: 100%;
+        width: 100%;
+        padding: 0.3rem;
+        li {
+          width: 100%;
+          opacity: 0;
+          // float: none;
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+      }
+      // animation triggered on hover of h3 title
+      &:hover {
+        background: $blue;
+        ul {
+          display: block;
+          li {
+            @for $i from 1 through 4 {
+              &:nth-child(#{$i}) {
+                animation-delay: ($i * 0.1s);
+              }
+            }
+          }
+        }
+      }
+      &:hover li {
+        animation: drop 0.8s forwards;
       }
     }
+
     border: yellow 2px solid;
     // tech stats
     .work-skills {
       border: yellow 2px solid;
       //svg cloud wrapper
       .cloud-wrapper {
-        border: yellow 2px solid;
+        border: blue 2px solid;
+        margin-top: 6rem;
         img {
           background-color: $blue;
         }
