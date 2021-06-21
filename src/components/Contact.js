@@ -88,20 +88,20 @@ const Contact = () => {
           <form>
             <div className="input-wrapper">
               <div className="fn-wrapper">
-                <p className="placeholder firstname-placeholder">First Name</p>
+                <p className="placeholder firstname-placeholder">First Name:</p>
                 <input type="text" id="firstname" required />
               </div>
               <div className="ln-wrapper">
-                <p className="placeholder lastname-placeholder">Last Name</p>
+                <p className="placeholder lastname-placeholder">Last Name:</p>
                 <input type="text" id="lastname" required />
               </div>
               <div className="email-wrapper">
-                <p className="placeholder email-placeholder">E-mail Address</p>
+                <p className="placeholder email-placeholder">E-mail Address:</p>
                 <input type="email" id="email" required />
               </div>
             </div>
             <div className="textarea-submit-wrapper">
-              <p className="placeholder message-placeholder">Message...</p>
+              <p className="placeholder message-placeholder">Message:</p>
               <textarea required></textarea>
               <button
                 type="submit"

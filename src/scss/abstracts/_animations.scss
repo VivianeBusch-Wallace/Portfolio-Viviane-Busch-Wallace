@@ -78,3 +78,14 @@
     opacity: 0;
   }
 }
+
+// animation for placeholders of input and textarea
+@keyframes move-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-7vw);
+    color: white;
+  }
+}

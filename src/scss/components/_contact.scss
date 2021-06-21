@@ -25,14 +25,17 @@
 .fn-wrapper,
 .ln-wrapper,
 .email-wrapper {
-  border: yellow 1px solid;
+  // border: yellow 1px solid;
+  // placeholders of inputs
+
   p {
-    border: goldenrod 1px solid;
+    // border: goldenrod 1px solid;
     position: absolute;
     margin: 0 auto;
     color: black;
     align-self: flex-start;
     margin-left: 0.3rem;
+    animation: move-left 2s 1 forwards;
   }
   // &:active p,
   // &:valid p,
@@ -42,7 +45,7 @@
   // }
 }
 .message-placeholder {
-  border: chartreuse 2px dashed;
+  // border: chartreuse 2px dashed;
   // margin-top: 2rem;
   position: absolute;
   color: black;
@@ -50,6 +53,7 @@
   align-self: flex-start;
   margin-left: 0.2rem;
   margin: 0 0 16vw 0.2rem;
+  animation: move-left 2s 1 forwards;
 }
 
 // input:active ~ p {
@@ -147,7 +151,7 @@ textarea,
     // }
 
     .input-wrapper {
-      border: cadetblue 5px dotted;
+      // border: cadetblue 5px dotted;
       width: auto;
       height: 9vw;
       @include center(column, space-evenly);
@@ -163,21 +167,21 @@ textarea,
       // &::placeholder {
       //   color: $blue;
       // }
-      &:active + p,
-      &:valid + p {
-        border: blue 2px solid;
-        transform: translateX(-10vw);
-      }
-      & ~ p {
-        color: green;
-      }
+      // &:active + p,
+      // &:valid + p {
+      //   border: blue 2px solid;
+      //   transform: translateX(-10vw);
+      // }
+      // & ~ p {
+      //   color: green;
+      // }
     }
 
     // textarea and submit button wrapper
     .textarea-submit-wrapper {
       @include center(column);
       position: relative;
-      border: green 2px solid;
+      // border: green 2px solid;
     }
 
     // textarea for sending a message
