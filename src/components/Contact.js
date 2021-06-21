@@ -29,7 +29,7 @@ const Contact = () => {
           // social media contact with links
         }
         <div className="holler-phone-wrapper">
-          <h2>Give me a sign! </h2>
+          <h2>Get in touch! </h2>
           <FontAwesomeIcon
             icon={["fas", "phone"]}
             size="lg"

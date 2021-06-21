@@ -18,8 +18,20 @@
 .contact-wrapper,
 .fn-wrapper,
 .ln-wrapper,
-.email-wrapper {
+.email-wrapper,
+.textarea-submit-wrapper {
   @include center(column);
+}
+
+// managing placeholders for inputs
+.fn-wrapper p,
+.ln-wrapper p,
+.email-wrapper p,
+.message-placeholder {
+  position: absolute;
+  color: $fontColor;
+  align-self: flex-start;
+  animation: move-left 2s 1 forwards;
 }
 
 .fn-wrapper,
@@ -27,40 +39,18 @@
 .email-wrapper {
   // border: yellow 1px solid;
   // placeholders of inputs
-
   p {
     // border: goldenrod 1px solid;
-    position: absolute;
     margin: 0 auto;
-    color: black;
-    align-self: flex-start;
     margin-left: 0.3rem;
-    animation: move-left 2s 1 forwards;
   }
-  // &:active p,
-  // &:valid p,
-  // &::selection p {
-  //   border: blue 2px solid;
-  //   transform: translateX(-10vw);
-  // }
 }
 .message-placeholder {
   // border: chartreuse 2px dashed;
-  // margin-top: 2rem;
-  position: absolute;
-  color: black;
   z-index: 1;
-  align-self: flex-start;
   margin-left: 0.2rem;
   margin: 0 0 16vw 0.2rem;
-  animation: move-left 2s 1 forwards;
 }
-
-// input:active ~ p {
-//   // transform: translateX(-13px);
-//   color: red;
-//   margin-left: -10px;
-// }
 
 .icon,
 input,
@@ -144,12 +134,6 @@ textarea,
     background-color: $blue;
     border-radius: $border-radius;
 
-    // all labels in form
-    // label {
-    //   align-self: flex-start;
-    //   margin-left: 0.3vw;
-    // }
-
     .input-wrapper {
       // border: cadetblue 5px dotted;
       width: auto;
@@ -161,25 +145,13 @@ textarea,
     input {
       width: 18vw;
       font-family: inherit;
-      color: $blue;
+      // color: $blue; // does not work
       border-radius: $border-radius;
       padding: 0.2rem 0.3rem;
-      // &::placeholder {
-      //   color: $blue;
-      // }
-      // &:active + p,
-      // &:valid + p {
-      //   border: blue 2px solid;
-      //   transform: translateX(-10vw);
-      // }
-      // & ~ p {
-      //   color: green;
-      // }
     }
 
     // textarea and submit button wrapper
     .textarea-submit-wrapper {
-      @include center(column);
       position: relative;
       // border: green 2px solid;
     }
@@ -237,5 +209,5 @@ textarea,
 }
 
 // issues:
-// button hover does not work
-// button background color not working
+// sibling selector of input and the p which is a placeholder does not work
+// color $blue does not
