@@ -4,6 +4,43 @@ const Home = () => {
   return (
     <div className="section">
       <div className="home-wrapper">
+        <div className="welcome-animation">
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+        </div>
         <header className="hero">
           <div className="hero-text">
             <h1>
@@ -11,7 +48,7 @@ const Home = () => {
               <span className="swoosh-text">
                 <p>Welcome!</p>
                 <p>Thanks for stopping by.</p>
-                <p>Scroll down to see more.</p>
+                <p className="lastText">Scroll down to see more.</p>
               </span>
             </h1>
             <h2>My name is Viviane Wei Busch-Wallace.</h2>

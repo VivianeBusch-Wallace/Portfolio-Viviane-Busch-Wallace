@@ -17,6 +17,8 @@ const Components = (codingProjects) => (
     // licenseKey={"YOUR_KEY_HERE"}
     // my key is: "personal use", which is free
     scrollingSpeed={1500} /* Options here */
+    // autoScrolling={true}
+    // scrollHorizontally={true}
     navigation
     navigationTooltips={navAnchors}
     render={({ state, fullpageApi }) => {
@@ -59,3 +61,5 @@ export default Components;
 // start npm asap so that you can see issues immediately
 // resolving problems later is more difficult because it is not clear where they come from, but if you change just one thing and then check
 // then you know it was that
+
+// cannot get free license key until I know where this is deployed: https://alvarotrigo.com/fullPage/extensions/requestKey.html
