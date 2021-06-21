@@ -12,13 +12,31 @@
   position: absolute;
 }
 
+// spinning circles are the "silhouettes"
+.silhouette,
+.silhouette2,
+.silhouette3 {
+  // border: violet 1px solid;
+  border-radius: 50%;
+}
 .silhouette {
+  width: 20vw;
+  height: 20vw;
+  background: $background-gradient-flipped;
+  left: 16vw;
+  animation: spin 5s infinite alternate linear;
+}
+.silhouette2 {
+  width: 15vw;
+  height: 15vw;
+  background: $background-gradient;
+  animation: spin 5s 1s infinite alternate linear;
+}
+.silhouette3 {
   width: 10vw;
   height: 10vw;
   background: $background-gradient-flipped;
-  border: violet 1px solid;
-  border-radius: 50%;
-  left: 20vw;
+  animation: spin 5s 2s infinite alternate linear;
 }
 
 .welcome-animation {
@@ -53,7 +71,7 @@
     animation-play-state: running;
   }
 }
-
+// welcome text
 .hero {
   @include center();
   margin-left: 45vw;

@@ -4,7 +4,11 @@ const Home = () => {
   return (
     <div className="section">
       <div className="home-wrapper">
-        <div className="silhouette"></div>
+        <div className="silhouette">
+          <div className="silhouette2">
+            <div className="silhouette3"></div>
+          </div>
+        </div>
         <div className="welcome-animation">
           <div className="line" />
           <div className="line" />
