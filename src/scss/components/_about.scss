@@ -1,55 +1,55 @@
 //about wrapper
 .about-wrapper {
   border: yellow 2px solid;
-  @include center(row);
+  @include center(column);
 
   //title
-  h3 {
+  .about-title {
     border: yellow 2px solid;
   }
-  // about me
-  .about-me {
+  // about me - all of what is underneath the title
+  .about-me-wrapper {
     border: red 2px solid;
-    width: 30vw;
+    width: auto;
     @include center(row);
 
-    .profile-pic {
-      border: yellowgreen 2px solid;
-      width: auto;
-
-      img {
-        // border: yellow 2px solid;
-        border-radius: 50%;
-        border: $blue 0.3rem solid;
-        box-shadow: $boxshadow;
+    .about-me {
+      //wrapper of profile pic
+      .profile-pic {
+        border: yellowgreen 2px solid;
+        width: auto;
+        // profile image
+        img {
+          // border: yellow 2px solid;
+          border-radius: 50%;
+          border: $blue 0.3rem solid;
+          box-shadow: $boxshadow;
+        }
+      }
+      // about me text
+      p {
+        border: blue 2px solid;
       }
     }
-    p {
-      border: blue 2px solid;
-    }
   }
-
+  // learning text and skill cloud
   .skills-wrapper {
+    //learning journey text
     .learning-journey {
       border: yellow 2px solid;
       width: 20vw;
     }
     border: yellow 2px solid;
-    .skill-levels {
-      border: yellow 2px solid;
-      h4,
-      label,
-      .skill-bar {
-        border: yellow 2px solid;
-      }
-      .skillbar {
-        .lang {
-          border: yellow 2px solid;
-        }
-      }
-    }
+    // tech stats
     .work-skills {
       border: yellow 2px solid;
+      //svg cloud wrapper
+      .cloud-wrapper {
+        border: yellow 2px solid;
+        img {
+          background-color: $blue;
+        }
+      }
     }
   }
   .cv-download-wrapper {
