@@ -84,35 +84,21 @@ const Contact = () => {
           <form>
             <div className="input-wrapper">
               <div className="fn-wrapper">
-                <label for="firstname">First Name</label>
-                <input
-                  type="text"
-                  id="firstname"
-                  placeholder="First name"
-                  required
-                />
+                <p className="placeholder firstname-placeholder">First Name</p>
+                <input type="text" id="firstname" required />
               </div>
               <div className="ln-wrapper">
-                <label for="lastname">Last Name</label>
-                <input
-                  type="text"
-                  id="lastname"
-                  placeholder="Last name"
-                  required
-                />
+                <p className="placeholder lastname-placeholder">Last Name</p>
+                <input type="text" id="lastname" required />
               </div>
               <div className="email-wrapper">
-                <label for="email">E-mail Address</label>
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="E-mail address"
-                  required
-                />
+                <p className="placeholder email-placeholder">E-mail Address</p>
+                <input type="email" id="email" required />
               </div>
             </div>
             <div className="textarea-submit-wrapper">
-              <textarea placeholder="Message..." required></textarea>
+              <p className="placeholder message-placeholder">Message...</p>
+              <textarea required></textarea>
               <button type="submit" className="submit-btn">
                 Submit{" "}
                 <FontAwesomeIcon

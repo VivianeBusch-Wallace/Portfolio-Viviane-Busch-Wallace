@@ -22,12 +22,40 @@
   @include center(column);
 }
 
-// .fn-wrapper,
-// .ln-wrapper,
-// .email-wrapper,
-// textarea,
-// .submit-btn {
-//   border: yellow 1px solid;
+.fn-wrapper,
+.ln-wrapper,
+.email-wrapper {
+  border: yellow 1px solid;
+  p {
+    border: goldenrod 1px solid;
+    position: absolute;
+    margin: 0 auto;
+    color: black;
+    align-self: flex-start;
+    margin-left: 0.3rem;
+  }
+  // &:active p,
+  // &:valid p,
+  // &::selection p {
+  //   border: blue 2px solid;
+  //   transform: translateX(-10vw);
+  // }
+}
+.message-placeholder {
+  border: chartreuse 2px dashed;
+  // margin-top: 2rem;
+  position: absolute;
+  color: black;
+  z-index: 1;
+  align-self: flex-start;
+  margin-left: 0.2rem;
+  margin: 0 0 16vw 0.2rem;
+}
+
+// input:active ~ p {
+//   // transform: translateX(-13px);
+//   color: red;
+//   margin-left: -10px;
 // }
 
 .icon,
@@ -113,9 +141,16 @@ textarea,
     border-radius: $border-radius;
 
     // all labels in form
-    label {
-      align-self: flex-start;
-      margin-left: 0.3vw;
+    // label {
+    //   align-self: flex-start;
+    //   margin-left: 0.3vw;
+    // }
+
+    .input-wrapper {
+      border: cadetblue 5px dotted;
+      width: auto;
+      height: 9vw;
+      @include center(column, space-evenly);
     }
 
     // all inputs in form (firstname, lastname, email)
@@ -125,21 +160,28 @@ textarea,
       color: $blue;
       border-radius: $border-radius;
       padding: 0.2rem 0.3rem;
-      &::placeholder {
-        color: $blue;
+      // &::placeholder {
+      //   color: $blue;
+      // }
+      &:active + p,
+      &:valid + p {
+        border: blue 2px solid;
+        transform: translateX(-10vw);
       }
     }
 
     // textarea and submit button wrapper
     .textarea-submit-wrapper {
       @include center(column);
-      // border: green 2px solid;
+      position: relative;
+      border: green 2px solid;
     }
 
     // textarea for sending a message
     textarea {
+      position: relative;
       width: 18vw;
-      height: 18vw;
+      height: 15vw;
       padding: 0.2rem 0.3rem;
       border-radius: $border-radius;
       color: $blue;
