@@ -54,7 +54,7 @@ const About = () => {
               <div className="cloud-wrapper">
                 <img src={cloud} alt="language cloud with icons" />
               </div>
-              <h3>Language Tree</h3>
+              <h3>Language Cloud</h3>
               <FontAwesomeIcon
                 icon={["fab", "react"]}
                 className="fontAwe react"

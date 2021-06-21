@@ -61,3 +61,5 @@ export default App;
 // then you know it was that
 
 //  "_homepage": "https://vivianebusch-wallace.github.io/Portfolio-Viviane-Busch-Wallace/",
+
+// inspiration from: https://owldesign.ru/#do and from https://camille-pawlak.com/
