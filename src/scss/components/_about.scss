@@ -104,7 +104,8 @@
         border: blue 2px solid;
         margin-top: 6rem;
         img {
-          background-color: $blue;
+          border: beige 2px solid;
+          // box-shadow: $boxshadow;
         }
       }
       // language tree title
@@ -124,7 +125,7 @@
       //react icon
       .react {
         margin-top: -20vw;
-        margin-left: 16vw;
+        margin-left: 17vw;
       }
       //javescript icon
       .js {
@@ -133,13 +134,13 @@
       }
       // sass icon
       .sass {
-        margin-top: -27vw;
-        margin-left: 4.5vw;
+        margin-top: -26.5vw;
+        margin-left: 8vw;
       }
       //css icon
       .css {
-        margin-top: -19vw;
-        margin-left: 28vw;
+        margin-top: -18.5vw;
+        margin-left: 29vw;
       }
       // html icon
       .html {

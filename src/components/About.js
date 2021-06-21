@@ -52,7 +52,7 @@ const About = () => {
 
             <div className="work-skills">
               <div className="cloud-wrapper">
-                <img src={cloud} />
+                <img src={cloud} alt="language cloud with icons" />
               </div>
               <h3>Language Tree</h3>
               <FontAwesomeIcon
