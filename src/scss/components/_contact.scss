@@ -57,6 +57,7 @@ input,
 textarea,
 .submit-btn {
   box-shadow: $boxshadow;
+  border: none;
 }
 
 // non-shared properties
@@ -210,4 +211,4 @@ textarea,
 
 // issues:
 // sibling selector of input and the p which is a placeholder does not work
-// color $blue does not
+// color $blue does not for placeholders for some reason
