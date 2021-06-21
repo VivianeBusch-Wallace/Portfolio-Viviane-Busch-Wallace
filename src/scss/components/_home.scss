@@ -14,10 +14,11 @@
   // align-self: flex-start;
   z-index: -1;
   display: grid;
-  grid-template-columns: repeat(35, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-rows: repeat(35, 1fr);
+  grid-template-columns: 1fr;
   .line {
     background-color: $fontColor;
+    border: khaki 1px solid;
     &::after {
       content: "";
       width: 100%;
