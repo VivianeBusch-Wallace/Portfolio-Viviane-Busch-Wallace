@@ -24,11 +24,12 @@ const ProjectItem = ({ codingProjects }) => {
           src={`./images/${source}`}
           alt={source}
           className={`proj-img proj-image${id}`}
-        >
-          <a src={link}></a>
-        </img>
+        />
         <div className="proj-description">
-          <h3>{projectTitle}</h3>
+          <a href={link}>
+            <h3>{projectTitle}</h3>
+          </a>
+
           <h4>{shortDescription}</h4>
           <h4>Keywords: {keywords}</h4>
           <h4>Tools used: {tools}</h4>
