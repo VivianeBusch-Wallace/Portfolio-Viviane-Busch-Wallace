@@ -24,6 +24,16 @@
   }
 }
 
+// animation for text shadow
+@keyframes text-shadow {
+  from {
+    text-shadow: none;
+  }
+  to {
+    text-shadow: 7px 7px 11px $light-blue-green, 10px 10px 3px $light-blue-green;
+  }
+}
+
 // animation for abstract lines on the left
 @keyframes move {
   0% {

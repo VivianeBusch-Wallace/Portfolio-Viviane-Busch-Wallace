@@ -80,7 +80,7 @@
   height: 25vh;
   width: auto;
   @include center(column, space-evenly, flex-start);
-  border: 2px black solid;
+  // border: 2px black solid;
   text-transform: capitalize;
   h1 {
     margin-bottom: 2rem;
@@ -88,6 +88,9 @@
   }
   h2 {
     font-size: 35px;
+    span {
+      animation: text-shadow 2s 1 normal linear forwards;
+    }
   }
   .swoosh-text {
     // border: blue 2px solid;

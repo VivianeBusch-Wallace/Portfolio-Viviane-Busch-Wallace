@@ -64,8 +64,12 @@ const Home = () => {
                 <p className="lastText">Scroll down to see more.</p>
               </span>
             </h1>
-            <h2>My name is Viviane Wei Busch-Wallace.</h2>
-            <h2>I'm a junior fullstack web developer.</h2>
+            <h2>
+              My name is <span>Viviane Wei Busch-Wallace</span>.
+            </h2>
+            <h2>
+              I'm a junior <span>fullstack web developer</span>.
+            </h2>
           </div>
         </header>
       </div>
