@@ -3,4 +3,8 @@
   width: 100vw;
   @include center(column);
   border: 2px black solid;
+
+  .swoosh-text {
+    display: inline-block;
+  }
 }

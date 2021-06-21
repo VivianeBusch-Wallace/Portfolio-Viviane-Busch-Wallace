@@ -23,8 +23,8 @@ const Components = (codingProjects) => (
       return (
         <ReactFullpage.Wrapper>
           {/* <Navigation /> */}
-          {/* <Home />
-          <About />
+          <Home />
+          {/* <About />
           <Projects codingProjects={codingProjects} /> */}
           <Contact />
         </ReactFullpage.Wrapper>

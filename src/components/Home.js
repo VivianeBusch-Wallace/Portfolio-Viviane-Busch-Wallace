@@ -6,9 +6,16 @@ const Home = () => {
       <div className="home-wrapper">
         <header className="hero">
           <div className="hero-text">
-            <h1>Hey, you found me! Welcome! Thanks for stopping by.</h1>
+            <h1>
+              Hey, you found me!{" "}
+              <span className="swoosh-text">
+                <p>Welcome!</p>
+                <p>Thanks for stopping by.</p>
+                <p>Scroll down to see more.</p>
+              </span>
+            </h1>
             <h2>My name is Viviane Wei Busch-Wallace.</h2>
-            <h2>I'm a junior fullstack web developer...</h2>
+            <h2>I'm a junior fullstack web developer.</h2>
           </div>
         </header>
       </div>
