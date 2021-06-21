@@ -3,11 +3,10 @@ import React from "react";
 // importing fontawesome icons
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { far } from "@fortawesome/free-regular-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // adding icons to fontawesome library
-library.add(fab, far, faPhone);
+library.add(fab, fas);
 
 const About = () => {
   return (
@@ -23,49 +22,27 @@ const About = () => {
             />
           </div>
           <p>
-            I am 31 years old and live in Hamburg, Germany. Born and raised in
-            Germany to a German father and a Chinese mother, after graduating
-            High School I decided to go study in my mom's hometown in Shanghai,
-            China. I actually spent about 6 years there studying Chinese and
-            working as an English teacher. I met my husband and a couple years
-            ago we returned to Germany to get married. Now I am working on my
-            web development skills, learning Javascript, HTML, CSS, and more at
-            the Digital Career Institute.
+            I am 31 years old and live in Hamburg, Germany. As a German - who is
+            also half Chinese - I decided to spend some time in China after
+            graduating from college to get my Bachelor's degree in Marketing and
+            Business Administration. I actually spent several years there
+            studying and working as an English teacher. Because of my
+            multicultural background I speak English and German on a regular
+            basis and I am also fluent in Chinese.
+          </p>
+        </div>
+        <div className="learning-journey">
+          <p>
+            As a learner of software engineering I love to work with animations
+            like with Sass or CSS, and Javascript to create websites with great
+            UI/UX design. I want to give the user an enjoyable experience while
+            browsing the web. Right now I am working on my web development
+            skills studying at the Digital Career Institute. But I am eager to
+            learn more and hope to continue my journey even after this course.
           </p>
         </div>
         <div className="skills-wrapper">
-          <div className="skill-levels">
-            <h4>My language skills</h4>
-            <label for="German">German</label>
-            <div className="skill-bar">
-              <div className="lang German"></div>
-            </div>
-            <label for="English">English</label>
-            <div className="skill-bar">
-              <div className="lang English"></div>
-            </div>
-            <label for="Chinese">Chinese</label>
-            <div className="skill-bar">
-              <div className="lang Chinese"></div>
-            </div>
-            <label for="Spanish">Spanish</label>
-            <div className="skill-bar">
-              <div className="lang Spanish"></div>
-            </div>
-          </div>
           <div className="work-skills">
-            {/* <i className="fab fa-js-square"></i>
-            <span className="hover-text js">JavaScript</span>
-            <i className="fab fa-css3-alt"></i>
-            <span className="hover-text css">CSS</span>
-            <i className="fab fa-html5"></i>
-            <span className="hover-text html">HTML5</span>
-            <i className="fas fa-file-word"></i>
-            <span className="hover-text word">Word</span>
-            <i className="fas fa-file-excel"></i>
-            <span className="hover-text excel">Excel</span>
-            <i className="fas fa-file-powerpoint"></i>
-            <span className="hover-text ppt">Sass</span> */}
             <FontAwesomeIcon
               icon={["fab", "react"]}
               className="fontAwe react"
@@ -96,6 +73,11 @@ const About = () => {
             <FontAwesomeIcon
               icon={["fab", "bootstrap"]}
               className="fontAwe bootstrap"
+              size="7x"
+            />
+            <FontAwesomeIcon
+              icon={["fas", "pencil-ruler"]}
+              className="fontAwe drawing"
               size="7x"
             />
           </div>

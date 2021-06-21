@@ -11,15 +11,25 @@
   .about-me {
     border: red 2px solid;
     width: 30vw;
+    @include center(row);
+
     .profile-pic {
-      border: yellow 2px solid;
+      border: yellowgreen 2px solid;
+      width: auto;
+
       img {
-        border: yellow 2px solid;
+        // border: yellow 2px solid;
+        border-radius: 50%;
+        border: $blue 0.3rem solid;
+        box-shadow: $boxshadow;
       }
     }
     p {
       border: blue 2px solid;
     }
+  }
+  .learning-journey {
+    border: yellow 2px solid;
   }
   .skills-wrapper {
     border: yellow 2px solid;
