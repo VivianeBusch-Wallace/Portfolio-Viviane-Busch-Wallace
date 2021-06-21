@@ -1,5 +1,8 @@
 import React from "react";
 
+// cloud svg (made it myself with svgator)
+import cloud from "../scss/svgs/cloud.svg";
+
 // importing fontawesome icons
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -12,7 +15,7 @@ const About = () => {
   return (
     <div className="section">
       <div className="about-wrapper">
-        <h3>About me</h3>
+        <h2>About me</h2>
         <div className="about-me">
           <div className="profile-pic">
             <img
@@ -31,30 +34,34 @@ const About = () => {
             basis and I am also fluent in Chinese.
           </p>
         </div>
-        <div className="learning-journey">
-          <p>
-            As a learner of software engineering I love to work with animations
-            like with Sass or CSS, and Javascript to create websites with great
-            UI/UX design. I want to give the user an enjoyable experience while
-            browsing the web. Right now I am working on my web development
-            skills studying at the Digital Career Institute. But I am eager to
-            learn more and hope to continue my journey even after this course.
-          </p>
-        </div>
+
         <div className="skills-wrapper">
+          <div className="learning-journey">
+            <p>
+              As a learner of software engineering I love to work with
+              animations like with Sass or CSS, and Javascript to create
+              websites with great UI/UX design. I want to give the user an
+              enjoyable experience while browsing the web. Right now I am
+              working on my web development skills studying at the Digital
+              Career Institute. But I am eager to learn more and hope to
+              continue my journey even after this course.
+            </p>
+          </div>
+
           <div className="work-skills">
+            <div className="cloud-wrapper">
+              <img src={cloud} />
+            </div>
             <FontAwesomeIcon
               icon={["fab", "react"]}
               className="fontAwe react"
               size="7x"
             />
-
             <FontAwesomeIcon
               icon={["fab", "js-square"]}
               className="fontAwe js"
               size="7x"
             />
-
             <FontAwesomeIcon
               icon={["fab", "sass"]}
               className="fontAwe sass"

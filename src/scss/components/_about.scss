@@ -1,7 +1,7 @@
 //about wrapper
 .about-wrapper {
   border: yellow 2px solid;
-  @include center(column);
+  @include center(row);
 
   //title
   h3 {
@@ -28,10 +28,12 @@
       border: blue 2px solid;
     }
   }
-  .learning-journey {
-    border: yellow 2px solid;
-  }
+
   .skills-wrapper {
+    .learning-journey {
+      border: yellow 2px solid;
+      width: 20vw;
+    }
     border: yellow 2px solid;
     .skill-levels {
       border: yellow 2px solid;
