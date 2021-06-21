@@ -1,8 +1,5 @@
 import React from "react";
 
-// importing carousel API
-import Carousel from "react-elastic-carousel";
-
 // importing ProjectItem
 import ProjectItem from "./ProjectItem";
 
@@ -14,9 +11,7 @@ const Projects = ({ codingProjects }) => {
   return (
     <div className="section">
       <ul className="projects-wrapper">
-        <Carousel itemsToShow={1}>
-          <ProjectItem codingProjects={codingProjects} />
-        </Carousel>
+        <ProjectItem codingProjects={codingProjects} />
       </ul>
     </div>
   );

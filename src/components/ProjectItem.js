@@ -13,23 +13,19 @@ const ProjectItem = ({ codingProjects }) => {
       keywords,
       tools,
       source,
-      link,
     } = proj;
 
     console.log(source);
 
     return (
-      <li className={`projectItem-wrapper proj-wrapper-${id}`} key={id}>
+      <li className="projectItem-wrapper" key={id}>
         <img
           src={`./images/${source}`}
           alt={source}
           className={`proj-img proj-image${id}`}
         />
         <div className="proj-description">
-          <a href={link}>
-            <h3>{projectTitle}</h3>
-          </a>
-
+          <h3>{projectTitle}</h3>
           <h4>{shortDescription}</h4>
           <h4>Keywords: {keywords}</h4>
           <h4>Tools used: {tools}</h4>
@@ -51,5 +47,4 @@ export default ProjectItem;
 // receive data information through parent projects, but deconstructed
 
 // issues encountered:
-// why need codingProjects.codingProjects.map to map??? why is it nested and if it is nested
-// because of the levels it goes through then why isn't it nested deeper?
+// why need codingProjects.codingProjects.map to map??? why is it nested and if it is nested because of the levels it goes through then why isn't it nested deeper?
