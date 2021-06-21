@@ -1,8 +1,8 @@
 // projectItem-wrapper (li)
 .projectItem-wrapper {
   list-style: none;
-  width: 90vw;
-  height: auto;
+  min-width: 100%;
+  height: 80vh;
   @include center(row, flex-start, flex-start);
   border: powderblue 3px solid;
   position: absolute;
@@ -68,6 +68,7 @@
 .proj-description {
   border: white solid 2px;
   width: 20vw;
+  z-index: 10;
   * {
     margin: 1rem 1rem;
   }

@@ -1,8 +1,9 @@
 // project - ul
 .projects-wrapper {
   border: 2px solid green;
-  @include center(column);
+  // @include center(column);
   position: relative;
   width: 100%;
-  height: inherit;
+  height: 100vh;
+  display: flex;
 }
