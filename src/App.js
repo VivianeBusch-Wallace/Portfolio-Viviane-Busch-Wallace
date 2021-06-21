@@ -8,10 +8,10 @@ import Components from "./components/Components";
 import CodingProjects from "./projects.json";
 
 function App(props) {
-  console.log("from App >>");
+  // console.log("from App >>");
   // console.log(process.env.PUBLIC_URL);
   // console.log(CodingProjects);
-  console.log(props);
+  // console.log(props);
   // setting up loading page
   // const [loading, setLoading] = useState(true);
   // useEffect(() => {

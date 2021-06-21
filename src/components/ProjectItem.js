@@ -1,8 +1,8 @@
 import React from "react";
 
 const ProjectItem = ({ codingProjects }) => {
-  console.log("from projectItem >>");
-  console.log(codingProjects);
+  // console.log("from projectItem >>");
+  // console.log(codingProjects);
 
   const eachProject = codingProjects.codingProjects.map((proj) => {
     const {
@@ -18,7 +18,7 @@ const ProjectItem = ({ codingProjects }) => {
     console.log(source);
 
     return (
-      <li className="projectItem-wrapper" key={id}>
+      <li className={`projectItem-wrapper proj-wrapper-${id}`} key={id}>
         <img
           src={`./images/${source}`}
           alt={source}
