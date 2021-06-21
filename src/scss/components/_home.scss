@@ -5,6 +5,19 @@
   border: 2px black solid;
 
   .swoosh-text {
+    // border: blue 2px solid;
     display: inline-block;
+    width: auto;
+    height: 50px;
+    overflow: hidden;
+    p {
+      padding-top: 10px;
+      animation: swoosh 5s infinite alternate linear;
+    }
   }
 }
+
+// issues
+// it's really hard to get the cubic bezier right, the second one was the best I got but still wasn't ideal
+// cubic-bezier(0.1, 1, 0.5, 0.1)
+// cubic-bezier(0.28, 0.92, 0.67, 0.29)

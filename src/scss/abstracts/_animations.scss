@@ -1,3 +1,14 @@
+// animations for home
+// switching text animation
+@keyframes swoosh {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-110px);
+  }
+}
+
 // animations for contact page
 // phone shaking animation
 @keyframes shake {
