@@ -54,40 +54,41 @@ const About = () => {
               <div className="cloud-wrapper">
                 <img src={cloud} />
               </div>
+              <h3>Language Tree</h3>
               <FontAwesomeIcon
                 icon={["fab", "react"]}
                 className="fontAwe react"
-                size="7x"
+                size="6x"
               />
               <FontAwesomeIcon
                 icon={["fab", "js-square"]}
                 className="fontAwe js"
-                size="7x"
+                size="6x"
               />
               <FontAwesomeIcon
                 icon={["fab", "sass"]}
                 className="fontAwe sass"
-                size="7x"
+                size="6x"
               />
               <FontAwesomeIcon
                 icon={["fab", "css3-alt"]}
                 className="fontAwe css"
-                size="7x"
+                size="6x"
               />
               <FontAwesomeIcon
                 icon={["fab", "html5"]}
                 className="fontAwe html"
-                size="7x"
+                size="6x"
               />
               <FontAwesomeIcon
                 icon={["fab", "bootstrap"]}
                 className="fontAwe bootstrap"
-                size="7x"
+                size="6x"
               />
               <FontAwesomeIcon
                 icon={["fas", "pencil-ruler"]}
                 className="fontAwe drawing"
-                size="7x"
+                size="5x"
               />
             </div>
           </div>

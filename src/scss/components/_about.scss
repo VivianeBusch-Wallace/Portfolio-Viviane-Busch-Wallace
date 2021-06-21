@@ -42,6 +42,8 @@
   }
   // tech info - learning text and skill cloud
   .skills-wrapper {
+    border: yellow 2px solid;
+
     //what I love about coding text
     .love-coding {
       border: yellow 2px solid;
@@ -93,26 +95,75 @@
       }
     }
 
-    border: yellow 2px solid;
     // tech stats
     .work-skills {
       border: yellow 2px solid;
       //svg cloud wrapper
       .cloud-wrapper {
+        position: relative;
         border: blue 2px solid;
         margin-top: 6rem;
         img {
           background-color: $blue;
         }
       }
+      // language tree title
+      h3 {
+        text-align: end;
+      }
+      // fontawesome icons for languages
+      .fontAwe {
+        border: lightcoral 2px solid;
+        position: absolute;
+        margin-top: -19vw;
+        margin-left: 4vw;
+        color: $blue;
+
+        // size: 4x; //check it
+      }
+      //react icon
+      .react {
+        margin-top: -20vw;
+        margin-left: 16vw;
+      }
+      //javescript icon
+      .js {
+        margin-top: -28vw;
+        margin-left: 21vw;
+      }
+      // sass icon
+      .sass {
+        margin-top: -27vw;
+        margin-left: 4.5vw;
+      }
+      //css icon
+      .css {
+        margin-top: -19vw;
+        margin-left: 28vw;
+      }
+      // html icon
+      .html {
+        margin-top: -13vw;
+        margin-left: 9vw;
+      }
+      // bootstrap icon
+      .bootstrap {
+        margin-top: -12vw;
+        margin-left: 22vw;
+      }
+      // drawing icon
+      .drawing {
+        margin-top: -19vw;
+        margin-left: 5vw;
+      }
     }
   }
-  .cv-download-wrapper {
-    border: yellow 2px solid;
-    a {
-      border: yellow 2px solid;
-    }
-  }
+  // .cv-download-wrapper {
+  //   border: yellow 2px solid;
+  //   a {
+  //     border: yellow 2px solid;
+  //   }
+  // }
 }
 
 // profile pic of About
