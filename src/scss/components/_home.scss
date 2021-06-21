@@ -1,3 +1,5 @@
+@import "../abstracts/animations";
+
 .home-wrapper {
   position: relative;
   border: 2px green solid;
@@ -7,18 +9,18 @@
 }
 
 .welcome-animation {
-  border: 2px red solid;
+  // border: 2px red solid;
   width: 35vw;
-  height: inherit;
+  height: 70vh;
   position: absolute;
   // align-self: flex-start;
   z-index: -1;
   display: grid;
-  grid-template-rows: repeat(35, 1fr);
+  grid-template-rows: repeat($line-count, 1fr);
   grid-template-columns: 1fr;
   .line {
     background-color: $fontColor;
-    border: khaki 1px solid;
+    // border: khaki 1px solid;
     &::after {
       content: "";
       width: 100%;
@@ -29,6 +31,33 @@
       // border: 2px red solid;
       transform: translateY(40%);
     }
+  }
+}
+
+// For loop to randomize values for each div bar
+@for $i from 1 through $line-count {
+  .line:nth-child(#{$i}) {
+    background: $blue;
+    width: random(30) + vw;
+    transform-origin: 0 0;
+    animation-name: move;
+    animation-duration: random(2) + 2 + s;
+    animation-delay: random(3) - 1 + s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: cubic-bezier(0, 0.1, 0.795, 0.5);
+    animation-play-state: running;
+    // &::after {
+    //   background-color: lawngreen;
+    //   width: random(4) + vw;
+    //   animation-name: move-child;
+    //   animation-duration: random(2) + 2 + s;
+    //   animation-delay: random(3) - 1 + s;
+    //   animation-iteration-count: infinite;
+    //   animation-direction: normal;
+    //   animation-timing-function: cubic-bezier(0, 0.1, 0.795, 0.5);
+    //   animation-play-state: running;
+    // }
   }
 }
 

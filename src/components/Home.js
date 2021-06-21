@@ -40,6 +40,11 @@ const Home = () => {
           <div className="line" />
           <div className="line" />
           <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
         </div>
         <header className="hero">
           <div className="hero-text">

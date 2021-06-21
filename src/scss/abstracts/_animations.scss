@@ -9,6 +9,28 @@
   }
 }
 
+// animation for abstract lines on the left
+@keyframes move {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1.4);
+    opacity: 0;
+  }
+}
+@keyframes move-child {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(30%);
+    opacity: 0;
+  }
+}
+
 // animations for contact page
 // phone shaking animation
 @keyframes shake {
