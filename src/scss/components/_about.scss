@@ -10,34 +10,42 @@
   // about me - all of what is underneath the title
   .about-me-wrapper {
     border: red 2px solid;
-    width: auto;
-    @include center(row);
-
+    width: 85vw;
+    @include center(row, space-between);
+    // about me info
     .about-me {
+      border: yellowgreen 2px solid;
+      width: 30vw;
+      height: 70vh;
+      @include center(column, space-evenly);
       //wrapper of profile pic
       .profile-pic {
-        border: yellowgreen 2px solid;
+        border: green 2px solid;
         width: auto;
         // profile image
         img {
-          // border: yellow 2px solid;
           border-radius: 50%;
           border: $blue 0.3rem solid;
           box-shadow: $boxshadow;
+          height: 20vw;
+          width: 19vw;
         }
       }
       // about me text
       p {
         border: blue 2px solid;
+        line-height: 1.5;
+        font-size: 17px;
+        text-align: justify;
       }
     }
   }
-  // learning text and skill cloud
+  // tech info - learning text and skill cloud
   .skills-wrapper {
     //learning journey text
     .learning-journey {
       border: yellow 2px solid;
-      width: 20vw;
+      width: 40vw;
     }
     border: yellow 2px solid;
     // tech stats
