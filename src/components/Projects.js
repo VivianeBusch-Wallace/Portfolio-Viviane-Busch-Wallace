@@ -48,6 +48,7 @@ const Projects = ({ codingProjects }) => {
   // console.log(codingProjects);
   // console.log(codingProjects.codingProjects);
   console.log(typeof ProjectItem);
+  console.log(ProjectItem);
 
   const [page, setPage] = useState(0);
   const length = ProjectItem.length;
@@ -68,21 +69,23 @@ const Projects = ({ codingProjects }) => {
 
   return (
     <div className="section">
-      <ul className="projects-wrapper">
+      <div className="proj-slider">
         <FontAwesomeIcon
           icon={["fas", "chevron-left"]}
           className="fontAwe prev"
           size="3x"
           onClick={prevSlide}
         />
-        <ProjectItem codingProjects={codingProjects} />
+        <ul className="projects-wrapper">
+          <ProjectItem codingProjects={codingProjects} />
+        </ul>
         <FontAwesomeIcon
           icon={["fas", "chevron-right"]}
           className="fontAwe next"
           size="3x"
           onClick={nextSlide}
         />
-      </ul>
+      </div>
     </div>
   );
 };

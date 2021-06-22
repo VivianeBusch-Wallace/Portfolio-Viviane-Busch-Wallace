@@ -13,19 +13,24 @@ const ProjectItem = ({ codingProjects }) => {
       keywords,
       tools,
       source,
+      link,
     } = proj;
 
     console.log(source);
 
     return (
       <li className={`projectItem-wrapper proj-wrapper-${id}`} key={id}>
-        <img
-          src={`./images/${source}`}
-          alt={source}
-          className={`proj-img proj-image${id}`}
-        />
+        <a href={link}>
+          <img
+            src={`./images/${source}`}
+            alt={source}
+            className={`proj-img proj-image${id}`}
+          />
+        </a>
         <div className="proj-description">
-          <h3>{projectTitle}</h3>
+          <h3>
+            <a href={link}>{projectTitle}</a>
+          </h3>
           <h4>{shortDescription}</h4>
           <h4>Keywords: {keywords}</h4>
           <h4>Tools used: {tools}</h4>

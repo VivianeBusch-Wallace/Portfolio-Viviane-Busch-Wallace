@@ -1,11 +1,21 @@
+// importing variables so that they can be applied here
+@import "../abstracts/variables";
+
 // projectItem-wrapper (li)
 .projectItem-wrapper {
   list-style: none;
-  min-width: 100%;
+  // min-width: 100%;
   height: 80vh;
-  @include center(row, flex-start, flex-start);
+  @include center(row, space-evenly);
   border: powderblue 3px solid;
-  position: absolute;
+  // position: absolute;
+  a {
+    color: white;
+
+    :active {
+      color: $blue;
+    }
+  }
 }
 // project wrapper individually
 .proj-wrapper-0 {
