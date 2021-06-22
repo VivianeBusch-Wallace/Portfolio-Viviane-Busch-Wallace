@@ -1,4 +1,26 @@
 nav {
-  width: 5rem;
+  width: auto;
   height: auto;
+  border: blueviolet 2px solid;
+  @include center(row, flex-end);
+
+  .navigation {
+    border: blue 2px solid;
+    list-style-type: none;
+    @include center(row, space-around);
+    width: 30vw;
+    height: auto;
+    li {
+      border: yellow 2px solid;
+      @include center();
+      width: 100%;
+      background-color: $blue;
+      a {
+        text-decoration: none;
+        color: $fontColor;
+        font-family: "K2D";
+        font-size: 1.5rem;
+      }
+    }
+  }
 }

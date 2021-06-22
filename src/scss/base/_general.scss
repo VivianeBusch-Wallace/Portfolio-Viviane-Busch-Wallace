@@ -9,6 +9,11 @@ body {
   background: $background-gradient;
 }
 
+.section {
+  width: 100vw;
+  height: 100vh;
+}
+
 // styling navigation of fullpage.js
 // Navigation titles
 #fp-nav ul li .fp-tooltip {
