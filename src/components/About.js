@@ -41,7 +41,14 @@ const About = () => {
           </div>
           <div className="skills-wrapper">
             <div className="love-coding">
-              <h3>What I love about coding</h3>
+              <h3>
+                What I love about coding<span> </span>
+                <FontAwesomeIcon
+                  icon={["fa", "chevron-circle-down"]}
+                  className="fontAwe chevron-circle-down"
+                  // size="1x"
+                />
+              </h3>
               <ul>
                 <li>endless possibilities</li>
                 <li>UI/UX design</li>
