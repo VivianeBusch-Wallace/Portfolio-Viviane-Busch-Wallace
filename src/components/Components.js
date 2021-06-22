@@ -8,6 +8,7 @@ import Home from "./Home";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import GallerySlider from "./GallerySlider";
 
 const navAnchors = ["Home", "About", "My Work", "Contact"];
 
@@ -30,7 +31,8 @@ const Components = (codingProjects) => {
             {/* <Navigation /> */}
             {/* <Home /> */}
             {/* <About /> */}
-            <Projects codingProjects={codingProjects} />
+            {/* <Projects codingProjects={codingProjects} /> */}
+            <GallerySlider />
             {/* <Contact /> */}
           </ReactFullpage.Wrapper>
         );
