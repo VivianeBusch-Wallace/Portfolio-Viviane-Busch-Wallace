@@ -99,7 +99,7 @@ const ProjectItem = ({ codingProjects }) => {
     }
   );
 
-  return eachProject;
+  return <React.Fragment>{eachProject}</React.Fragment>;
 };
 export default ProjectItem;
 

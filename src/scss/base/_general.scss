@@ -7,11 +7,16 @@ body {
   // background-color: #172f3b;
   // background: linear-gradient(#00a896, #028090);
   background: $background-gradient;
+  // scroll-behavior: smooth;
+  // position: relative;
 }
 
 .section {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 // styling navigation of fullpage.js

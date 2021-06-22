@@ -5,7 +5,7 @@ import ProjectItem from "./ProjectItem";
 
 const Projects = ({ codingProjects }) => {
   console.log("from projects >>");
-  // console.log(codingProjects);
+  console.log(codingProjects);
   // console.log(codingProjects.codingProjects);
 
   return (

@@ -1,25 +1,41 @@
 nav {
   width: auto;
   height: auto;
-  border: blueviolet 2px solid;
-  @include center(row, flex-end);
-
+  // border: blueviolet 2px solid;
+  // @include center(row, flex-end);
+  position: absolute;
+  right: 0;
   .navigation {
-    border: blue 2px solid;
+    // border: blue 2px solid;
     list-style-type: none;
     @include center(row, space-around);
     width: 30vw;
     height: auto;
     li {
-      border: yellow 2px solid;
+      // border: yellow 2px solid;
+      border-radius: $border-radius;
       @include center();
       width: 100%;
+      height: 2.5rem;
       background-color: $blue;
+      transform: skew(-2deg, -4deg) translate(0, 0.5rem);
+      z-index: 3;
+      &:hover {
+        // transform: skew(-2deg, -4deg) translate(0, -0.5rem);
+        transform: translate(0, 0.1rem);
+        height: 2.5rem;
+
+        background-color: #0089fa;
+        box-shadow: $boxshadow;
+        transition: all 0.2s ease-in;
+      }
       a {
+        width: 100%;
         text-decoration: none;
         color: $fontColor;
         font-family: "K2D";
         font-size: 1.5rem;
+        text-align: center;
       }
     }
   }

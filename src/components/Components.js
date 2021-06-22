@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from "react";
 // ReactFullpage
 // import ReactFullpage from "@fullpage/react-fullpage";
-
-// importing all components
-import Navigation from "./Navigation";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import GallerySlider from "./GallerySlider";
+
+// importing all components
+import Navigation from "./Navigation";
+{
+  /* <Navigation />; */
+}
 
 const navAnchors = ["Home", "About", "My Work", "Contact"];
 
@@ -16,39 +20,74 @@ const Components = (codingProjects) => {
   // useEffect();
 
   return (
-    <React.Fragment>
-      <Navigation />
-      <Home />
-      <About />
-      <Projects codingProjects={codingProjects} />
-      <GallerySlider />
-      <Contact />
-    </React.Fragment>
-
-    // <ReactFullpage
-    //   //fullpage options
-    //   licenseKey={"YOUR_KEY_HERE"}
-    //   // my key is: "personal use", which is free
-    //   scrollingSpeed={1500} /* Options here */
-    //   // autoScrolling={true}
-    //   // scrollHorizontally={true}
-    //   navigation
-    //   navigationTooltips={navAnchors}
-    //   render={({ state, fullpageApi }) => {
-    //     return (
-    //       <ReactFullpage.Wrapper>
-    //         {/* <Navigation /> */}
-    //         {/* <Home /> */}
-    //         {/* <About /> */}
-    //         {/* <Projects codingProjects={codingProjects} /> */}
-    //         <GallerySlider />
-    //         {/* <Contact /> */}
-    //       </ReactFullpage.Wrapper>
-    //     );
-    //   }}
-    // />
+    <Router>
+      <div>
+        <Navigation />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route
+            path="/projects"
+            exact
+            component={() => <Projects codingProjects={codingProjects} />}
+          />
+          <Route path="/about" exact component={About} />
+          <Route path="/contact" exact component={Contact} />
+          <Route path={() => "/main" || "/anything"}>
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 };
+
+{
+  /* <Route path="/">
+            <Home />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/projects">
+            <Projects codingProjects={codingProjects} />
+            <GallerySlider />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route> */
+}
+
+//-------
+// <React.Fragment>
+//   <Home />
+//   <About />
+//   <Projects codingProjects={codingProjects} />
+//   <GallerySlider />
+//   <Contact />
+// </React.Fragment>
+
+// <ReactFullpage
+//   //fullpage options
+//   licenseKey={"YOUR_KEY_HERE"}
+//   // my key is: "personal use", which is free
+//   scrollingSpeed={1500} /* Options here */
+//   // autoScrolling={true}
+//   // scrollHorizontally={true}
+//   navigation
+//   navigationTooltips={navAnchors}
+//   render={({ state, fullpageApi }) => {
+//     return (
+//       <ReactFullpage.Wrapper>
+//         {/* <Navigation /> */}
+//         {/* <Home /> */}
+//         {/* <About /> */}
+//         {/* <Projects codingProjects={codingProjects} /> */}
+//         <GallerySlider />
+//         {/* <Contact /> */}
+//       </ReactFullpage.Wrapper>
+//     );
+//   }}
+// />
 
 export default Components;
 

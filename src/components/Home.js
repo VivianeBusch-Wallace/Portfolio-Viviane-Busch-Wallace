@@ -1,8 +1,11 @@
 import React from "react";
+// importing all components
+import Navigation from "./Navigation";
 
 const Home = () => {
   return (
     <div className="section">
+      {/* <Navigation /> */}
       <div className="home-wrapper">
         {/* spinning circles */}
         <div className="silhouette">
