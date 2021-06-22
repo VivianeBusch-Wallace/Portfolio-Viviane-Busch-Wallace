@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 // ReactFullpage
-import ReactFullpage from "@fullpage/react-fullpage";
+// import ReactFullpage from "@fullpage/react-fullpage";
 
 // importing all components
 import Navigation from "./Navigation";
@@ -16,28 +16,37 @@ const Components = (codingProjects) => {
   // useEffect();
 
   return (
-    <ReactFullpage
-      //fullpage options
-      // licenseKey={"YOUR_KEY_HERE"}
-      // my key is: "personal use", which is free
-      scrollingSpeed={1500} /* Options here */
-      // autoScrolling={true}
-      // scrollHorizontally={true}
-      navigation
-      navigationTooltips={navAnchors}
-      render={({ state, fullpageApi }) => {
-        return (
-          <ReactFullpage.Wrapper>
-            {/* <Navigation /> */}
-            {/* <Home /> */}
-            {/* <About /> */}
-            {/* <Projects codingProjects={codingProjects} /> */}
-            <GallerySlider />
-            {/* <Contact /> */}
-          </ReactFullpage.Wrapper>
-        );
-      }}
-    />
+    <React.Fragment>
+      <Navigation />
+      <Home />
+      <About />
+      <Projects codingProjects={codingProjects} />
+      <GallerySlider />
+      <Contact />
+    </React.Fragment>
+
+    // <ReactFullpage
+    //   //fullpage options
+    //   licenseKey={"YOUR_KEY_HERE"}
+    //   // my key is: "personal use", which is free
+    //   scrollingSpeed={1500} /* Options here */
+    //   // autoScrolling={true}
+    //   // scrollHorizontally={true}
+    //   navigation
+    //   navigationTooltips={navAnchors}
+    //   render={({ state, fullpageApi }) => {
+    //     return (
+    //       <ReactFullpage.Wrapper>
+    //         {/* <Navigation /> */}
+    //         {/* <Home /> */}
+    //         {/* <About /> */}
+    //         {/* <Projects codingProjects={codingProjects} /> */}
+    //         <GallerySlider />
+    //         {/* <Contact /> */}
+    //       </ReactFullpage.Wrapper>
+    //     );
+    //   }}
+    // />
   );
 };
 
@@ -70,3 +79,50 @@ export default Components;
 // then you know it was that
 
 // cannot get free license key until I know where this is deployed: https://alvarotrigo.com/fullPage/extensions/requestKey.html
+
+//========================================
+
+// // import React, { useState, useEffect } from "react";
+// // ReactFullpage
+// import ReactFullpage from "@fullpage/react-fullpage";
+
+// // importing all components
+// import Navigation from "./Navigation";
+// import Home from "./Home";
+// import About from "./About";
+// import Projects from "./Projects";
+// import Contact from "./Contact";
+// import GallerySlider from "./GallerySlider";
+
+// const navAnchors = ["Home", "About", "My Work", "Contact"];
+
+// const Components = (codingProjects) => {
+//   // useEffect();
+
+//   return (
+//     <ReactFullpage
+//       //fullpage options
+//       // licenseKey={"YOUR_KEY_HERE"}
+//       // my key is: "personal use", which is free
+//       scrollingSpeed={1500} /* Options here */
+//       // autoScrolling={true}
+//       // scrollHorizontally={true}
+//       navigation
+//       navigationTooltips={navAnchors}
+//       render={({ state, fullpageApi }) => {
+//         return (
+//           <ReactFullpage.Wrapper>
+//             {/* <Navigation /> */}
+//             {/* <Home /> */}
+//             {/* <About /> */}
+//             {/* <Projects codingProjects={codingProjects} /> */}
+//             <GallerySlider />
+//             {/* <Contact /> */}
+//           </ReactFullpage.Wrapper>
+//         );
+//       }}
+//     />
+//   );
+// };
+
+// export default Components;

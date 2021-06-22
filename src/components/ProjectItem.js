@@ -1,52 +1,52 @@
-import React from "react";
+// import React from "react";
 
-const ProjectItem = ({ codingProjects }) => {
-  // console.log("from projectItem >>");
-  // console.log(codingProjects);
+// const ProjectItem = ({ codingProjects }) => {
+//   // console.log("from projectItem >>");
+//   // console.log(codingProjects);
 
-  const eachProject = codingProjects.codingProjects.map((proj) => {
-    const {
-      id,
-      projectTitle,
-      shortDescription,
-      longDescription,
-      keywords,
-      tools,
-      source,
-      link,
-    } = proj;
+//   const eachProject = codingProjects.codingProjects.map((proj) => {
+//     const {
+//       id,
+//       projectTitle,
+//       shortDescription,
+//       longDescription,
+//       keywords,
+//       tools,
+//       source,
+//       link,
+//     } = proj;
 
-    console.log(source);
+//     console.log(source);
 
-    return (
-      <Carousel.Item interval={1000}>
-        <li className={`projectItem-wrapper proj-wrapper-${id}`} key={id}>
-          <a href={link}>
-            <img
-              src={`./images/${source}`}
-              alt={source}
-              className={`proj-img proj-image${id}`}
-            />
-          </a>
-          <Carousel.Caption>
-            <div className="proj-description">
-              <h3>
-                <a href={link}>{projectTitle}</a>
-              </h3>
-              <h4>{shortDescription}</h4>
-              <h4>Keywords: {keywords}</h4>
-              <h4>Tools used: {tools}</h4>
-              <p>{longDescription}</p>
-            </div>
-          </Carousel.Caption>
-        </li>
-      </Carousel.Item>
-    );
-  });
+//     return (
+//       <Carousel.Item interval={1000}>
+//         <li className={`projectItem-wrapper proj-wrapper-${id}`} key={id}>
+//           <a href={link}>
+//             <img
+//               src={`./images/${source}`}
+//               alt={source}
+//               className={`proj-img proj-image${id}`}
+//             />
+//           </a>
+//           <Carousel.Caption>
+//             <div className="proj-description">
+//               <h3>
+//                 <a href={link}>{projectTitle}</a>
+//               </h3>
+//               <h4>{shortDescription}</h4>
+//               <h4>Keywords: {keywords}</h4>
+//               <h4>Tools used: {tools}</h4>
+//               <p>{longDescription}</p>
+//             </div>
+//           </Carousel.Caption>
+//         </li>
+//       </Carousel.Item>
+//     );
+//   });
 
-  return <React.Fragment>{eachProject}</React.Fragment>;
-};
-export default ProjectItem;
+//   return <React.Fragment>{eachProject}</React.Fragment>;
+// };
+// export default ProjectItem;
 
 // Notes during coding
 
@@ -60,48 +60,48 @@ export default ProjectItem;
 
 //====================
 
-// import React from "react";
+import React from "react";
 
-// const ProjectItem = ({ codingProjects }) => {
-//   // console.log("from projectItem >>");
-//   // console.log(codingProjects);
-//   codingProjects.codingProjects.map(
-//     ({
-//       id,
-//       projectTitle,
-//       shortDescription,
-//       longDescription,
-//       keywords,
-//       tools,
-//       source,
-//       link,
-//     }) => {
-//       return (
-//         <li className={`projectItem-wrapper proj-wrapper-${id}`} key={id}>
-//           <a href={link}>
-//             <img
-//               src={`./images/${source}`}
-//               alt={source}
-//               className={`proj-img proj-image${id}`}
-//             />
-//           </a>
-//           <div className="proj-description">
-//             <h3>
-//               <a href={link}>{projectTitle}</a>
-//             </h3>
-//             <h4>{shortDescription}</h4>
-//             <h4>Keywords: {keywords}</h4>
-//             <h4>Tools used: {tools}</h4>
-//             <p>{longDescription}</p>
-//           </div>
-//         </li>
-//       );
-//     }
-//   );
+const ProjectItem = ({ codingProjects }) => {
+  // console.log("from projectItem >>");
+  // console.log(codingProjects);
+  const eachProject = codingProjects.codingProjects.map(
+    ({
+      id,
+      projectTitle,
+      shortDescription,
+      longDescription,
+      keywords,
+      tools,
+      source,
+      link,
+    }) => {
+      return (
+        <li className={`projectItem-wrapper proj-wrapper-${id}`} key={id}>
+          <a href={link}>
+            <img
+              src={`./images/${source}`}
+              alt={source}
+              className={`proj-img proj-image${id}`}
+            />
+          </a>
+          <div className="proj-description">
+            <h3>
+              <a href={link}>{projectTitle}</a>
+            </h3>
+            <h4>{shortDescription}</h4>
+            <h4>Keywords: {keywords}</h4>
+            <h4>Tools used: {tools}</h4>
+            <p>{longDescription}</p>
+          </div>
+        </li>
+      );
+    }
+  );
 
-//   return eachProject;
-// };
-// export default ProjectItem;
+  return eachProject;
+};
+export default ProjectItem;
 
 {
   /* <Carousel>
