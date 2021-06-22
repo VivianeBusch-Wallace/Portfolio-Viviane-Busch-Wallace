@@ -7,7 +7,8 @@
   // min-width: 100%;
   height: 80vh;
   @include center(row, space-evenly);
-  border: powderblue 3px solid;
+  //   border: powderblue 3px solid;
+  padding: 3rem;
   // position: absolute;
   a {
     color: white;
@@ -18,29 +19,29 @@
   }
 }
 // project wrapper individually
-.proj-wrapper-0 {
-  background-color: lawngreen;
-}
-.proj-wrapper-1 {
-  background-color: green;
-  // display: none;
-}
-.proj-wrapper-2 {
-  background-color: yellow;
-  display: none;
-}
-.proj-wrapper-3 {
-  background-color: pink;
-  display: none;
-}
-.proj-wrapper-4 {
-  background-color: blue;
-  display: none;
-}
-.proj-wrapper-5 {
-  background-color: red;
-  display: none;
-}
+// .proj-wrapper-0 {
+//   background-color: lawngreen;
+// }
+// .proj-wrapper-1 {
+//   background-color: green;
+//   // display: none;
+// }
+// .proj-wrapper-2 {
+//   background-color: yellow;
+//   //   display: none;
+// }
+// .proj-wrapper-3 {
+//   background-color: pink;
+//   //   display: none;
+// }
+// .proj-wrapper-4 {
+//   background-color: blue;
+//   //   display: none;
+// }
+// .proj-wrapper-5 {
+//   background-color: red;
+//   //   display: none;
+// }
 // screenshots of project
 .proj-img {
   height: 30vw;
@@ -52,34 +53,34 @@
   box-shadow: $boxshadow;
   border-radius: $border-radius;
 }
-.proj-image0 {
-  border: yellow 5px solid;
-  // @include animation-proj();
-  z-index: 1;
-}
-.proj-image1 {
-  border: green 5px solid;
-  // display: none;
-  // @include animation-proj(3s);
-  z-index: 2;
-}
-.proj-image2 {
-  border: blue 5px solid;
-  display: none;
-  // @include animation-proj(2s);
-}
-.proj-image3 {
-  border: orange 5px solid;
-  display: none;
-}
-.proj-image4 {
-  border: plum 5px solid;
-  display: none;
-}
-.proj-image5 {
-  border: plum 5px solid;
-  display: none;
-}
+// .proj-image0 {
+//   border: yellow 5px solid;
+//   // @include animation-proj();
+//   z-index: 1;
+// }
+// .proj-image1 {
+//   border: green 5px solid;
+//   // display: none;
+//   // @include animation-proj(3s);
+//   z-index: 2;
+// }
+// .proj-image2 {
+//   border: blue 5px solid;
+//   //   display: none;
+//   // @include animation-proj(2s);
+// }
+// .proj-image3 {
+//   border: orange 5px solid;
+//   //   display: none;
+// }
+// .proj-image4 {
+//   border: plum 5px solid;
+//   display: none;
+// }
+// .proj-image5 {
+//   border: plum 5px solid;
+//   display: none;
+// }
 
 // description of project
 .proj-description {

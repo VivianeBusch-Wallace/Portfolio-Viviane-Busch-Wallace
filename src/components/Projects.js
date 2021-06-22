@@ -1,22 +1,87 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 // importing ProjectItem
+import ProjectItems from "../projects.json";
 import ProjectItem from "./ProjectItem";
 
-const Projects = ({ codingProjects }) => {
+// import projects json (then send to ProjectItems through Projects)
+// import CodingProjects from "./projects.json";
+
+// fontawesome icons
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// adding icons to fontawesome library
+library.add(fas);
+
+const Projects = () => {
   console.log("from projects >>");
-  console.log(codingProjects);
-  // console.log(codingProjects.codingProjects);
+  // console.log(codingProjects);
+  // console.log(codingProjects.codingProjects[0]);
+
+  const codingProjects = ProjectItems;
+
+  const [val, setVal] = useState(0);
+  useEffect(() => {
+    let number = val;
+  }, [val]);
+
+  const arr = codingProjects;
+
+  console.log(arr);
 
   return (
     <div className="section">
+      <button onClick={() => setVal(val - 1)} disabled={val === 0}>
+        <FontAwesomeIcon
+          icon={["fas", "chevron-left"]}
+          className="fontAwe prev"
+          size="3x"
+        />
+      </button>
+
       <ul className="projects-wrapper">
-        <ProjectItem codingProjects={codingProjects} />
+        <ProjectItem codingProjects={arr[val]} />
       </ul>
+
+      <button
+        onClick={() => {
+          setVal(val + 1);
+          console.log(val);
+        }}
+        s
+        disabled={arr.length == val + 1}
+      >
+        <FontAwesomeIcon
+          icon={["fas", "chevron-right"]}
+          className="fontAwe next"
+          size="3x"
+        />
+      </button>
     </div>
   );
 };
+
 export default Projects;
+
+// ==========================
+// const [page, setPage] = useState(0);
+// // const length = projArr.length;
+// const length = 6; //6 projects
+
+// //what happens on clicking arrow right
+// const nextSlide = () => {
+//   setPage(page === length - 1 ? 0 : page + 1);
+// };
+
+// //what happens on clicking arrow left
+// const prevSlide = () => {
+//   setPage(page === 0 ? length - 1 : page - 1);
+// };
+
+// if (!Array.isArray(ProjectItem) || ProjectItem.length <= 0) {
+//   return null;
+// }
 
 // Notes during coding
 
