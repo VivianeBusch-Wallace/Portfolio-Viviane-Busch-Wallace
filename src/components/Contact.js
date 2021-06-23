@@ -18,6 +18,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 library.add(fab, far, faPhone);
 
 const Contact = () => {
+  // e.preventDefault();
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -85,7 +87,7 @@ const Contact = () => {
           {
             // contact form
           }
-          <form>
+          <form action="">
             <div className="input-wrapper">
               <div className="fn-wrapper">
                 <p className="placeholder firstname-placeholder">First Name:</p>
@@ -103,15 +105,12 @@ const Contact = () => {
             <div className="textarea-submit-wrapper">
               <p className="placeholder message-placeholder">Message:</p>
               <textarea required></textarea>
-              <button
-                type="submit"
-                className="submit-btn"
-                onClick={handleSubmit}
-              >
+              <button type="submit" className="submit-btn">
                 Submit{" "}
                 <FontAwesomeIcon
                   icon={["far", "paper-plane"]}
                   className="fontAwe plane"
+                  onClick={handleSubmit}
                 />
               </button>
             </div>
