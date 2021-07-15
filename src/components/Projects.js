@@ -19,11 +19,15 @@ const Projects = () => {
   // console.log(codingProjects);
   // console.log(codingProjects.codingProjects[0]);
 
+  // destructuring:
+  // const arr = [...codingProjects.codingProjects]
+  // << this will give me same as projects.json
+
   const codingProjects = ProjectItems;
 
   const [val, setVal] = useState(0);
   useEffect(() => {
-    let number = val;
+    // let number = val;
   }, [val]);
 
   const arr = codingProjects;
@@ -50,7 +54,7 @@ const Projects = () => {
           console.log(val);
         }}
         s
-        disabled={arr.length == val + 1}
+        disabled={arr.length === val + 1}
       >
         <FontAwesomeIcon
           icon={["fas", "chevron-right"]}

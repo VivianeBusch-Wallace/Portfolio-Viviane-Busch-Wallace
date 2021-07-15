@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 const Loading = () => {
   return (
@@ -8,6 +8,7 @@ const Loading = () => {
         <div>
           <iframe
             src="https://giphy.com/embed/l2JI2G6JqnSz8uEOk"
+            title="squirrel giphy"
             width="100%"
             height="100%"
             frameBorder="0"

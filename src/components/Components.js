@@ -1,20 +1,16 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
+import React from "react";
 // ReactFullpage
 // import ReactFullpage from "@fullpage/react-fullpage";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
-import GallerySlider from "./GallerySlider";
+// import GallerySlider from "./GallerySlider";
 
 // importing all components
 import Navigation from "./Navigation";
-{
-  /* <Navigation />; */
-}
-
-const navAnchors = ["Home", "About", "My Work", "Contact"];
 
 const Components = (codingProjects) => {
   // useEffect();
@@ -40,22 +36,7 @@ const Components = (codingProjects) => {
     </Router>
   );
 };
-
-{
-  /* <Route path="/">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/projects">
-            <Projects codingProjects={codingProjects} />
-            <GallerySlider />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route> */
-}
+export default Components;
 
 //-------
 // <React.Fragment>
@@ -88,8 +69,6 @@ const Components = (codingProjects) => {
 //     );
 //   }}
 // />
-
-export default Components;
 
 // Notes during coding
 

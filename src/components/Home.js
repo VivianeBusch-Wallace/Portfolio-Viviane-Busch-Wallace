@@ -1,6 +1,6 @@
 import React from "react";
 // importing all components
-import Navigation from "./Navigation";
+// import Navigation from "./Navigation";
 
 const Home = () => {
   return (

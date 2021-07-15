@@ -150,8 +150,7 @@ export default ProjectItem;
 // };
 // export default ProjectItem;
 
-{
-  /* <Carousel>
+/* <Carousel>
   <Carousel.Item interval={1000}>
     <img
       className="d-block w-100"
@@ -186,4 +185,3 @@ export default ProjectItem;
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>; */
-}

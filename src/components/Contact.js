@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 // // ReactFullpage
 // import ReactFullpage from "@fullpage/react-fullpage";
@@ -53,6 +53,7 @@ const Contact = () => {
                 <a
                   href="https://www.linkedin.com/in/viviane-busch-wallace-68a117179/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <FontAwesomeIcon
                     icon={["fab", "linkedin"]}
@@ -64,6 +65,7 @@ const Contact = () => {
                 <a
                   href="https://www.xing.com/profile/VivianeWei_BuschWallace/cv"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <FontAwesomeIcon
                     icon={["fab", "xing-square"]}
@@ -75,6 +77,7 @@ const Contact = () => {
                 <a
                   href="https://instagram.com/vivianewallaceart"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <FontAwesomeIcon
                     icon={["fab", "instagram-square"]}
