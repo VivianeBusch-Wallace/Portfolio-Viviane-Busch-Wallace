@@ -42,8 +42,8 @@ export default App;
 // when send props write route differently
 
 // issues encountered:
-// <Route path={process.env.PUBLIC_URL + "/"} exact component={Home} /> this URL did not work, although it should work for both deployed and developer version as Hadi said!?
-// destructing projects with space in the key does not work > temp solution: make it one word
+// <Route path={process.env.PUBLIC_URL + "/"} exact component={Home} /> this URL did not work, although it should work for both deployed and developer version
+// destructing projects with space in the key does not work > solution: make it one word
 
 // adding Loading page with effects not possible because where to put?
 // const [loading, setLoading] = useState(true);

@@ -109,7 +109,7 @@ const Contact = () => {
               <p className="placeholder message-placeholder">Message:</p>
               <textarea required></textarea>
               <button type="submit" className="submit-btn">
-                Submit{" "}
+                Submit
                 <FontAwesomeIcon
                   icon={["far", "paper-plane"]}
                   className="fontAwe plane"
