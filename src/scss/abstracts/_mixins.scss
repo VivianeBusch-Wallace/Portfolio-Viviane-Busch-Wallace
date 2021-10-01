@@ -13,6 +13,7 @@
   justify-content: $justify-content;
   align-items: $align-items;
 }
+
 // font
 @mixin font-face($font-family, $file-path, $weight: normal) {
   @font-face {
